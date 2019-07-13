@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -83,6 +83,10 @@
 <wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.127" layer="21"/>
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.127" layer="21"/>
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.127" layer="21"/>
+<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.127" layer="21"/>
 </package>
 <package name="CHERRY_MX_LED">
 <hole x="0" y="0" drill="4.1"/>
@@ -96,6 +100,10 @@
 <wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.127" layer="21"/>
 <wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.127" layer="21"/>
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.127" layer="21"/>
+<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.127" layer="21"/>
 </package>
 <package name="CHERRY_MX_DIODE">
 <hole x="0" y="0" drill="4.1"/>
@@ -109,48 +117,48 @@
 <wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.127" layer="21"/>
 <wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.127" layer="21"/>
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.127" layer="21"/>
+<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.127" layer="21"/>
 </package>
-<package name="CHERRY_MX_LED_1_6">
+<package name="CHERRY_MX_1_2">
 <hole x="0" y="0" drill="4"/>
 <pad name="1" x="-3.81" y="2.54" drill="1.5" shape="square"/>
 <hole x="-5.08" y="0" drill="1.7"/>
 <hole x="5.08" y="0" drill="1.7"/>
 <pad name="2" x="2.54" y="5.08" drill="1.5" shape="square"/>
-<hole x="-1.27" y="-5.08" drill="1"/>
-<hole x="1.27" y="-5.08" drill="1"/>
 <wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.127" layer="21"/>
 <wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.127" layer="21"/>
 <wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.127" layer="21"/>
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.127" layer="21"/>
-<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.127" layer="21"/>
-<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.127" layer="21"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.127" layer="21"/>
-<hole x="-50.0126" y="6.985" drill="3.05"/>
-<hole x="50.0126" y="6.985" drill="3.05"/>
-<hole x="-50.0126" y="-15.24" drill="4"/>
-<hole x="50.0126" y="-15.24" drill="4"/>
-</package>
-<package name="CHERRY_MX_LED_1_2">
-<hole x="0" y="0" drill="4"/>
-<pad name="1" x="-3.81" y="2.54" drill="1.5" shape="square"/>
-<hole x="-5.08" y="0" drill="1.7"/>
-<hole x="5.08" y="0" drill="1.7"/>
-<pad name="2" x="2.54" y="5.08" drill="1.5" shape="square"/>
-<hole x="-1.27" y="-5.08" drill="1"/>
-<hole x="1.27" y="-5.08" drill="1"/>
-<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.127" layer="21"/>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.127" layer="21"/>
-<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.127" layer="21"/>
-<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.127" layer="21"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.127" layer="21"/>
 <hole x="-11.938" y="6.985" drill="3.05"/>
 <hole x="11.938" y="6.985" drill="3.05"/>
-<hole x="-11.938" y="-15.24" drill="4"/>
-<hole x="11.938" y="-15.24" drill="4"/>
+<hole x="-11.938" y="-8.255" drill="4"/>
+<hole x="11.938" y="-8.255" drill="4"/>
+<wire x1="19.05" y1="10.16" x2="-19.05" y2="10.16" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="10.16" x2="-19.05" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="-10.16" x2="19.05" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="19.05" y1="-10.16" x2="19.05" y2="10.16" width="0.127" layer="21"/>
+</package>
+<package name="CHERRY_MX_1_6">
+<hole x="0" y="0" drill="4"/>
+<pad name="1" x="-3.81" y="2.54" drill="1.5" shape="square"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<pad name="2" x="2.54" y="5.08" drill="1.5" shape="square"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.127" layer="21"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.127" layer="21"/>
+<hole x="-50.0126" y="6.985" drill="3.05"/>
+<hole x="50.0126" y="6.985" drill="3.05"/>
+<hole x="-50.0126" y="-8.255" drill="4"/>
+<hole x="50.0126" y="-8.255" drill="4"/>
+<wire x1="59.69" y1="-10.16" x2="-59.69" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="-59.69" y1="10.16" x2="59.69" y2="10.16" width="0.127" layer="21"/>
+<wire x1="-59.69" y1="10.16" x2="-59.69" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="59.69" y1="10.16" x2="59.69" y2="-10.16" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -163,12 +171,12 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CHERRY_MX_LED">
+<deviceset name="CHERRY_MX">
 <gates>
 <gate name="G$1" symbol="CHERRY_MX" x="5.08" y="0"/>
 </gates>
 <devices>
-<device name="" package="CHERRY_MX_LED">
+<device name="" package="CHERRY_MX">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -177,7 +185,7 @@
 <technology name=""/>
 </technologies>
 </device>
-<device name="CHERRY_MX_LED_1_2" package="CHERRY_MX_LED_1_2">
+<device name="CHERRY_MX_1_2" package="CHERRY_MX_1_2">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -186,7 +194,7 @@
 <technology name=""/>
 </technologies>
 </device>
-<device name="CHERRY_MX_LED_1_6" package="CHERRY_MX_LED_1_6">
+<device name="CHERRY_MX_1_6" package="CHERRY_MX_1_6">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
