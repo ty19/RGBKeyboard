@@ -1,0 +1,8 @@
+"Qty";"Value";"Device";"Package";"Parts";"Description";"DESCRIPTION";"DIGI-KEY_PART_NUMBER";"DIGI-KEY_PURCHASE_URL";"MF";"MP";"MPN";"OC_FARNELL";"OC_NEWARK";"PACKAGE";"SPICEPREFIX";
+"1";"";"MA03-1";"MA03-1";"SV4";"PIN HEADER";"";"";"";"";"";"";"unknown";"unknown";"";"";
+"2";"";"MA04-1";"MA04-1";"SV1, SV3";"PIN HEADER";"";"";"";"";"";"";"unknown";"unknown";"";"";
+"4";"4.7k";"R-US_R0603";"R0603";"R1, R2, R3, R4";"RESISTOR, American symbol";"";"";"";"";"";"";"";"";"";"R";
+"14";"BAV21W-7-F";"BAV21W-7-F";"SOD3715X135N";"D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, D12, D13, D14";"SURFACE MOUNT SWITCHING DIODE";" DIODE, SWITCH, 200V, 0.25W, SOD123";" Diode Type: Switching";" Forward Current If_AV_ ";"BAV21W-FDICT-ND";"https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol";"Diodes Inc.";"BAV21W-7-F";"";"";"";
+"12";"CHERRY_MX";"CHERRY_MX";"CHERRY_MX";"U$1, U$2, U$3, U$4, U$5, U$6, U$7, U$8, U$9, U$10, U$11, U$12";"";"";"";"";"";"";"";"";"";"";"";
+"1";"CHERRY_MXCHERRY_MX_1_2";"CHERRY_MXCHERRY_MX_1_2";"CHERRY_MX_1_2";"U$13";"";"";"";"";"";"";"";"";"";"";"";
+"1";"CHERRY_MXCHERRY_MX_1_6";"CHERRY_MXCHERRY_MX_1_6";"CHERRY_MX_1_6";"U$14";"";"";"";"";"";"";"";"";"";"";"";
