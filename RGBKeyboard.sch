@@ -4529,10 +4529,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.127" layer="21"/>
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.127" layer="21"/>
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.127" layer="21"/>
-<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.127" layer="21"/>
-<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.127" layer="21"/>
+<wire x1="9.525" y1="9.525" x2="9.525" y2="-9.525" width="0.127" layer="21"/>
+<wire x1="9.525" y1="-9.525" x2="-9.525" y2="-9.525" width="0.127" layer="21"/>
+<wire x1="-9.525" y1="-9.525" x2="-9.525" y2="9.525" width="0.127" layer="21"/>
+<wire x1="-9.525" y1="9.525" x2="9.525" y2="9.525" width="0.127" layer="21"/>
 </package>
 <package name="CHERRY_MX_1_2">
 <hole x="0" y="0" drill="4"/>
@@ -4548,10 +4548,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <hole x="11.938" y="6.985" drill="3.05"/>
 <hole x="-11.938" y="-8.255" drill="4"/>
 <hole x="11.938" y="-8.255" drill="4"/>
-<wire x1="19.05" y1="10.16" x2="-19.05" y2="10.16" width="0.127" layer="21"/>
-<wire x1="-19.05" y1="10.16" x2="-19.05" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="-19.05" y1="-10.16" x2="19.05" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="19.05" y1="-10.16" x2="19.05" y2="10.16" width="0.127" layer="21"/>
+<wire x1="19.05" y1="9.525" x2="-19.05" y2="9.525" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="-9.525" x2="19.05" y2="-9.525" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="9.525" x2="-19.05" y2="-9.525" width="0.127" layer="21"/>
+<wire x1="19.05" y1="9.525" x2="19.05" y2="-9.525" width="0.127" layer="21"/>
 </package>
 <package name="CHERRY_MX_1_6">
 <hole x="0" y="0" drill="4"/>
