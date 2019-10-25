@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -74,10 +74,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="171.43" y2="0" width="0" layer="20"/>
-<wire x1="171.43" y1="0" x2="171.43" y2="113.97" width="0" layer="20"/>
-<wire x1="171.43" y1="113.97" x2="0" y2="113.97" width="0" layer="20"/>
-<wire x1="0" y1="113.97" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="76.18" y2="0" width="0" layer="20"/>
+<wire x1="76.18" y1="0" x2="76.18" y2="76.505" width="0" layer="20"/>
+<wire x1="76.18" y1="76.505" x2="0" y2="76.505" width="0" layer="20"/>
+<wire x1="0" y1="76.505" x2="0" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -1129,28 +1129,50 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 &lt;/tr&gt;
 &lt;/table&gt;</description>
 <packages>
-<package name="R0603" urn="urn:adsk.eagle:footprint:23044/1" library_version="5">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
-<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
-<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
-<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<package name="C0805" urn="urn:adsk.eagle:footprint:23124/1" library_version="5">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
+<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
+<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
+</package>
+<package name="R0805" urn="urn:adsk.eagle:footprint:23045/1" library_version="5">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
+<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
 </package>
 </packages>
 <packages3d>
-<package3d name="R0603" urn="urn:adsk.eagle:package:23555/2" type="model" library_version="5">
+<package3d name="C0805" urn="urn:adsk.eagle:package:23617/2" type="model" library_version="5">
+<description>CAPACITOR</description>
+<packageinstances>
+<packageinstance name="C0805"/>
+</packageinstances>
+</package3d>
+<package3d name="R0805" urn="urn:adsk.eagle:package:23553/2" type="model" library_version="5">
 <description>RESISTOR</description>
 <packageinstances>
-<packageinstance name="R0603"/>
+<packageinstance name="R0805"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1174,103 +1196,6 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </package>
 </packages>
 </library>
-<library name="con-lstb" urn="urn:adsk.eagle:library:162">
-<description>&lt;b&gt;Pin Headers&lt;/b&gt;&lt;p&gt;
-Naming:&lt;p&gt;
-MA = male&lt;p&gt;
-# contacts - # rows&lt;p&gt;
-W = angled&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="MA04-1" urn="urn:adsk.eagle:footprint:8285/1" library_version="1">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-4.445" y1="1.27" x2="-3.175" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="0.635" x2="-5.08" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-4.445" y1="1.27" x2="-5.08" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-0.635" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="-1.27" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="4.445" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="4.445" y1="1.27" x2="5.08" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="0.635" x2="5.08" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="-0.635" x2="4.445" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
-<pad name="1" x="-3.81" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="3" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="4" x="3.81" y="0" drill="1.016" shape="long" rot="R90"/>
-<text x="-5.08" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-6.223" y="-0.635" size="1.27" layer="21" ratio="10">1</text>
-<text x="0.635" y="1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="5.334" y="-0.635" size="1.27" layer="21" ratio="10">4</text>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
-<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
-</package>
-<package name="MA03-1" urn="urn:adsk.eagle:footprint:8281/1" library_version="1">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-3.175" y1="1.27" x2="-1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="0.635" x2="-3.81" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="1.27" x2="-3.81" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="-0.635" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="-1.27" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="0" drill="1.016" shape="long" rot="R90"/>
-<text x="-3.81" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-0.635" size="1.27" layer="21" ratio="10">1</text>
-<text x="-3.81" y="-2.921" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="MA04-1" urn="urn:adsk.eagle:package:8337/1" type="box" library_version="1">
-<description>PIN HEADER</description>
-<packageinstances>
-<packageinstance name="MA04-1"/>
-</packageinstances>
-</package3d>
-<package3d name="MA03-1" urn="urn:adsk.eagle:package:8339/1" type="box" library_version="1">
-<description>PIN HEADER</description>
-<packageinstances>
-<packageinstance name="MA03-1"/>
-</packageinstances>
-</package3d>
-</packages3d>
-</library>
 <library name="CHERRY_MX">
 <packages>
 <package name="CHERRY_MX">
@@ -1283,10 +1208,10 @@ W = angled&lt;p&gt;
 <wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.127" layer="21"/>
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.127" layer="21"/>
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.127" layer="21"/>
-<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.127" layer="21"/>
-<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.127" layer="21"/>
+<wire x1="9.525" y1="9.525" x2="9.525" y2="-9.525" width="0.127" layer="21"/>
+<wire x1="9.525" y1="-9.525" x2="-9.525" y2="-9.525" width="0.127" layer="21"/>
+<wire x1="-9.525" y1="-9.525" x2="-9.525" y2="9.525" width="0.127" layer="21"/>
+<wire x1="-9.525" y1="9.525" x2="9.525" y2="9.525" width="0.127" layer="21"/>
 </package>
 <package name="CHERRY_MX_1_2">
 <hole x="0" y="0" drill="4"/>
@@ -1300,31 +1225,243 @@ W = angled&lt;p&gt;
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.127" layer="21"/>
 <hole x="-11.938" y="6.985" drill="3.05"/>
 <hole x="11.938" y="6.985" drill="3.05"/>
-<hole x="-11.938" y="-15.24" drill="4"/>
-<hole x="11.938" y="-15.24" drill="4"/>
-<wire x1="19.05" y1="10.16" x2="-19.05" y2="10.16" width="0.127" layer="21"/>
-<wire x1="-19.05" y1="10.16" x2="-19.05" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="-19.05" y1="-10.16" x2="19.05" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="19.05" y1="-10.16" x2="19.05" y2="10.16" width="0.127" layer="21"/>
+<hole x="-11.938" y="-8.255" drill="4"/>
+<hole x="11.938" y="-8.255" drill="4"/>
+<wire x1="19.05" y1="9.525" x2="-19.05" y2="9.525" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="-9.525" x2="19.05" y2="-9.525" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="9.525" x2="-19.05" y2="-9.525" width="0.127" layer="21"/>
+<wire x1="19.05" y1="9.525" x2="19.05" y2="-9.525" width="0.127" layer="21"/>
 </package>
-<package name="CHERRY_MX_1_6">
-<hole x="0" y="0" drill="4"/>
-<pad name="1" x="-3.81" y="2.54" drill="1.5" shape="square"/>
-<hole x="-5.08" y="0" drill="1.7"/>
-<hole x="5.08" y="0" drill="1.7"/>
-<pad name="2" x="2.54" y="5.08" drill="1.5" shape="square"/>
-<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.127" layer="21"/>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.127" layer="21"/>
-<hole x="-50.0126" y="6.985" drill="3.05"/>
-<hole x="50.0126" y="6.985" drill="3.05"/>
-<hole x="-50.0126" y="-15.24" drill="4"/>
-<hole x="50.0126" y="-15.24" drill="4"/>
-<wire x1="-59.53125" y1="9.525" x2="59.53125" y2="9.525" width="0.127" layer="21"/>
-<wire x1="-59.53125" y1="-9.525" x2="-59.53125" y2="9.525" width="0.127" layer="21"/>
-<wire x1="-59.53125" y1="-9.525" x2="59.53125" y2="-9.525" width="0.127" layer="21"/>
-<wire x1="59.53125" y1="-9.525" x2="59.53125" y2="9.525" width="0.127" layer="21"/>
+</packages>
+</library>
+<library name="ATMEGA32U4-AUR">
+<packages>
+<package name="QFP80P1200X1200X120-44N">
+<text x="-7.725" y="-7.73" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-7.725" y="7.73" size="1.27" layer="25">&gt;NAME</text>
+<circle x="-7.48" y="4" radius="0.1" width="0.2" layer="21"/>
+<circle x="-7.48" y="4" radius="0.1" width="0.2" layer="51"/>
+<wire x1="5.05" y1="-5.05" x2="-5.05" y2="-5.05" width="0.127" layer="51"/>
+<wire x1="5.05" y1="5.05" x2="-5.05" y2="5.05" width="0.127" layer="51"/>
+<wire x1="5.05" y1="-5.05" x2="5.05" y2="5.05" width="0.127" layer="51"/>
+<wire x1="-5.05" y1="-5.05" x2="-5.05" y2="5.05" width="0.127" layer="51"/>
+<wire x1="5.05" y1="-5.05" x2="4.595" y2="-5.05" width="0.127" layer="21"/>
+<wire x1="5.05" y1="5.05" x2="4.595" y2="5.05" width="0.127" layer="21"/>
+<wire x1="-5.05" y1="-5.05" x2="-4.595" y2="-5.05" width="0.127" layer="21"/>
+<wire x1="-5.05" y1="5.05" x2="-4.595" y2="5.05" width="0.127" layer="21"/>
+<wire x1="5.05" y1="-5.05" x2="5.05" y2="-4.595" width="0.127" layer="21"/>
+<wire x1="5.05" y1="5.05" x2="5.05" y2="4.595" width="0.127" layer="21"/>
+<wire x1="-5.05" y1="-5.05" x2="-5.05" y2="-4.595" width="0.127" layer="21"/>
+<wire x1="-5.05" y1="5.05" x2="-5.05" y2="4.595" width="0.127" layer="21"/>
+<wire x1="-6.73" y1="-6.73" x2="6.73" y2="-6.73" width="0.05" layer="39"/>
+<wire x1="-6.73" y1="6.73" x2="6.73" y2="6.73" width="0.05" layer="39"/>
+<wire x1="-6.73" y1="-6.73" x2="-6.73" y2="6.73" width="0.05" layer="39"/>
+<wire x1="6.73" y1="-6.73" x2="6.73" y2="6.73" width="0.05" layer="39"/>
+<smd name="12" x="-4" y="-5.68" dx="1.6" dy="0.55" layer="1" roundness="25" rot="R90"/>
+<smd name="13" x="-3.2" y="-5.68" dx="1.6" dy="0.55" layer="1" roundness="25" rot="R90"/>
+<smd name="14" x="-2.4" y="-5.68" dx="1.6" dy="0.55" layer="1" roundness="25" rot="R90"/>
+<smd name="15" x="-1.6" y="-5.68" dx="1.6" dy="0.55" layer="1" roundness="25" rot="R90"/>
+<smd name="16" x="-0.8" y="-5.68" dx="1.6" dy="0.55" layer="1" roundness="25" rot="R90"/>
+<smd name="17" x="0" y="-5.68" dx="1.6" dy="0.55" layer="1" roundness="25" rot="R90"/>
+<smd name="18" x="0.8" y="-5.68" dx="1.6" dy="0.55" layer="1" roundness="25" rot="R90"/>
+<smd name="19" x="1.6" y="-5.68" dx="1.6" dy="0.55" layer="1" roundness="25" rot="R90"/>
+<smd name="20" x="2.4" y="-5.68" dx="1.6" dy="0.55" layer="1" roundness="25" rot="R90"/>
+<smd name="21" x="3.2" y="-5.68" dx="1.6" dy="0.55" layer="1" roundness="25" rot="R90"/>
+<smd name="22" x="4" y="-5.68" dx="1.6" dy="0.55" layer="1" roundness="25" rot="R90"/>
+<smd name="34" x="4" y="5.68" dx="1.6" dy="0.55" layer="1" roundness="25" rot="R90"/>
+<smd name="35" x="3.2" y="5.68" dx="1.6" dy="0.55" layer="1" roundness="25" rot="R90"/>
+<smd name="36" x="2.4" y="5.68" dx="1.6" dy="0.55" layer="1" roundness="25" rot="R90"/>
+<smd name="37" x="1.6" y="5.68" dx="1.6" dy="0.55" layer="1" roundness="25" rot="R90"/>
+<smd name="38" x="0.8" y="5.68" dx="1.6" dy="0.55" layer="1" roundness="25" rot="R90"/>
+<smd name="39" x="0" y="5.68" dx="1.6" dy="0.55" layer="1" roundness="25" rot="R90"/>
+<smd name="40" x="-0.8" y="5.68" dx="1.6" dy="0.55" layer="1" roundness="25" rot="R90"/>
+<smd name="41" x="-1.6" y="5.68" dx="1.6" dy="0.55" layer="1" roundness="25" rot="R90"/>
+<smd name="42" x="-2.4" y="5.68" dx="1.6" dy="0.55" layer="1" roundness="25" rot="R90"/>
+<smd name="43" x="-3.2" y="5.68" dx="1.6" dy="0.55" layer="1" roundness="25" rot="R90"/>
+<smd name="44" x="-4" y="5.68" dx="1.6" dy="0.55" layer="1" roundness="25" rot="R90"/>
+<smd name="1" x="-5.68" y="4" dx="1.6" dy="0.55" layer="1" roundness="25"/>
+<smd name="2" x="-5.68" y="3.2" dx="1.6" dy="0.55" layer="1" roundness="25"/>
+<smd name="3" x="-5.68" y="2.4" dx="1.6" dy="0.55" layer="1" roundness="25"/>
+<smd name="4" x="-5.68" y="1.6" dx="1.6" dy="0.55" layer="1" roundness="25"/>
+<smd name="5" x="-5.68" y="0.8" dx="1.6" dy="0.55" layer="1" roundness="25"/>
+<smd name="6" x="-5.68" y="0" dx="1.6" dy="0.55" layer="1" roundness="25"/>
+<smd name="7" x="-5.68" y="-0.8" dx="1.6" dy="0.55" layer="1" roundness="25"/>
+<smd name="8" x="-5.68" y="-1.6" dx="1.6" dy="0.55" layer="1" roundness="25"/>
+<smd name="9" x="-5.68" y="-2.4" dx="1.6" dy="0.55" layer="1" roundness="25"/>
+<smd name="10" x="-5.68" y="-3.2" dx="1.6" dy="0.55" layer="1" roundness="25"/>
+<smd name="11" x="-5.68" y="-4" dx="1.6" dy="0.55" layer="1" roundness="25"/>
+<smd name="23" x="5.68" y="-4" dx="1.6" dy="0.55" layer="1" roundness="25"/>
+<smd name="24" x="5.68" y="-3.2" dx="1.6" dy="0.55" layer="1" roundness="25"/>
+<smd name="25" x="5.68" y="-2.4" dx="1.6" dy="0.55" layer="1" roundness="25"/>
+<smd name="26" x="5.68" y="-1.6" dx="1.6" dy="0.55" layer="1" roundness="25"/>
+<smd name="27" x="5.68" y="-0.8" dx="1.6" dy="0.55" layer="1" roundness="25"/>
+<smd name="28" x="5.68" y="0" dx="1.6" dy="0.55" layer="1" roundness="25"/>
+<smd name="29" x="5.68" y="0.8" dx="1.6" dy="0.55" layer="1" roundness="25"/>
+<smd name="30" x="5.68" y="1.6" dx="1.6" dy="0.55" layer="1" roundness="25"/>
+<smd name="31" x="5.68" y="2.4" dx="1.6" dy="0.55" layer="1" roundness="25"/>
+<smd name="32" x="5.68" y="3.2" dx="1.6" dy="0.55" layer="1" roundness="25"/>
+<smd name="33" x="5.68" y="4" dx="1.6" dy="0.55" layer="1" roundness="25"/>
+</package>
+</packages>
+</library>
+<library name="UX60SC-MB-5S8">
+<packages>
+<package name="HIROSE_UX60SC-MB-5S8">
+<wire x1="-4" y1="2.45" x2="-4" y2="4.95" width="0.0001" layer="46"/>
+<wire x1="-4" y1="4.95" x2="-3.65" y2="5.3" width="0.0001" layer="46" curve="-90"/>
+<wire x1="-3.65" y1="5.3" x2="-3.3" y2="4.95" width="0.0001" layer="46" curve="-90"/>
+<wire x1="-3.3" y1="4.95" x2="-3.3" y2="2.45" width="0.0001" layer="46"/>
+<wire x1="-3.3" y1="2.45" x2="-3.65" y2="2.1" width="0.0001" layer="46" curve="-90"/>
+<wire x1="-3.65" y1="2.1" x2="-4" y2="2.45" width="0.0001" layer="46" curve="-90"/>
+<polygon width="0.0001" layer="16">
+<vertex x="-4.2" y="2.45"/>
+<vertex x="-4.2" y="4.95" curve="-90"/>
+<vertex x="-3.65" y="5.5" curve="-90"/>
+<vertex x="-3.1" y="4.95"/>
+<vertex x="-3.1" y="2.45" curve="-90"/>
+<vertex x="-3.65" y="1.9" curve="-90"/>
+</polygon>
+<wire x1="3.3" y1="2.45" x2="3.3" y2="4.95" width="0.0001" layer="46"/>
+<wire x1="3.3" y1="4.95" x2="3.65" y2="5.3" width="0.0001" layer="46" curve="-90"/>
+<wire x1="3.65" y1="5.3" x2="4" y2="4.95" width="0.0001" layer="46" curve="-90"/>
+<wire x1="4" y1="4.95" x2="4" y2="2.45" width="0.0001" layer="46"/>
+<wire x1="4" y1="2.45" x2="3.65" y2="2.1" width="0.0001" layer="46" curve="-90"/>
+<wire x1="3.65" y1="2.1" x2="3.3" y2="2.45" width="0.0001" layer="46" curve="-90"/>
+<polygon width="0.0001" layer="16">
+<vertex x="3.1" y="2.45"/>
+<vertex x="3.1" y="4.95" curve="-90"/>
+<vertex x="3.65" y="5.5" curve="-90"/>
+<vertex x="4.2" y="4.95"/>
+<vertex x="4.2" y="2.45" curve="-90"/>
+<vertex x="3.65" y="1.9" curve="-90"/>
+</polygon>
+<polygon width="0.0001" layer="41">
+<vertex x="-2.95" y="0"/>
+<vertex x="-2.95" y="0.5"/>
+<vertex x="-1.5" y="0.5"/>
+<vertex x="-1.5" y="1.3"/>
+<vertex x="-2.95" y="1.3"/>
+<vertex x="-2.95" y="2.1"/>
+<vertex x="-1.5" y="2.1"/>
+<vertex x="-1.5" y="3.6"/>
+<vertex x="1.5" y="3.6"/>
+<vertex x="1.5" y="2.1"/>
+<vertex x="2.95" y="2.1"/>
+<vertex x="2.95" y="1.3"/>
+<vertex x="1.5" y="1.3"/>
+<vertex x="1.5" y="0.5"/>
+<vertex x="2.95" y="0.5"/>
+<vertex x="2.95" y="0"/>
+</polygon>
+<polygon width="0.0001" layer="30">
+<vertex x="-4.3" y="2.45"/>
+<vertex x="-4.3" y="4.95" curve="-90"/>
+<vertex x="-3.65" y="5.6" curve="-90"/>
+<vertex x="-3" y="4.95"/>
+<vertex x="-3" y="2.45" curve="-90"/>
+<vertex x="-3.65" y="1.8" curve="-90"/>
+</polygon>
+<polygon width="0.0001" layer="30">
+<vertex x="3" y="2.45"/>
+<vertex x="3" y="4.95" curve="-90"/>
+<vertex x="3.65" y="5.6" curve="-90"/>
+<vertex x="4.3" y="4.95"/>
+<vertex x="4.3" y="2.45" curve="-90"/>
+<vertex x="3.65" y="1.8" curve="-90"/>
+</polygon>
+<polygon width="0.0001" layer="1">
+<vertex x="3.1" y="2.45"/>
+<vertex x="3.1" y="4.95" curve="-90"/>
+<vertex x="3.65" y="5.5" curve="-90"/>
+<vertex x="4.2" y="4.95"/>
+<vertex x="4.2" y="2.45" curve="-90"/>
+<vertex x="3.65" y="1.9" curve="-90"/>
+</polygon>
+<polygon width="0.0001" layer="1">
+<vertex x="-4.2" y="2.45"/>
+<vertex x="-4.2" y="4.95" curve="-90"/>
+<vertex x="-3.65" y="5.5" curve="-90"/>
+<vertex x="-3.1" y="4.95"/>
+<vertex x="-3.1" y="2.45" curve="-90"/>
+<vertex x="-3.65" y="1.9" curve="-90"/>
+</polygon>
+<polygon width="0.0001" layer="29">
+<vertex x="-4.3" y="2.45"/>
+<vertex x="-4.3" y="4.95" curve="-90"/>
+<vertex x="-3.65" y="5.6" curve="-90"/>
+<vertex x="-3" y="4.95"/>
+<vertex x="-3" y="2.45" curve="-90"/>
+<vertex x="-3.65" y="1.8" curve="-90"/>
+</polygon>
+<polygon width="0.0001" layer="29">
+<vertex x="3" y="2.45"/>
+<vertex x="3" y="4.95" curve="-90"/>
+<vertex x="3.65" y="5.6" curve="-90"/>
+<vertex x="4.3" y="4.95"/>
+<vertex x="4.3" y="2.45" curve="-90"/>
+<vertex x="3.65" y="1.8" curve="-90"/>
+</polygon>
+<wire x1="-3.95" y1="5.82" x2="-3.95" y2="6.7" width="0.127" layer="21"/>
+<wire x1="-3.95" y1="6.7" x2="3.95" y2="6.7" width="0.127" layer="21"/>
+<wire x1="3.95" y1="6.7" x2="3.95" y2="5.82" width="0.127" layer="21"/>
+<wire x1="3.95" y1="-0.5" x2="-3.95" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-8" y1="0" x2="8" y2="0" width="0.127" layer="51"/>
+<text x="5.5" y="0.2" size="0.4064" layer="51">PCB Edge</text>
+<wire x1="-3.95" y1="-0.5" x2="-3.95" y2="6.7" width="0.127" layer="51"/>
+<wire x1="-3.95" y1="6.7" x2="3.95" y2="6.7" width="0.127" layer="51"/>
+<wire x1="3.95" y1="6.7" x2="3.95" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="-3.95" y1="-0.5" x2="-3.95" y2="0.18" width="0.127" layer="21"/>
+<wire x1="3.95" y1="0.18" x2="3.95" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="3.95" y1="-0.5" x2="-3.95" y2="-0.5" width="0.127" layer="51"/>
+<circle x="-1.6" y="7.25" radius="0.1" width="0.2" layer="21"/>
+<circle x="-1.6" y="7.25" radius="0.1" width="0.2" layer="51"/>
+<wire x1="-4.45" y1="-0.75" x2="-4.45" y2="7.05" width="0.05" layer="39"/>
+<wire x1="-4.45" y1="7.05" x2="4.45" y2="7.05" width="0.05" layer="39"/>
+<wire x1="4.45" y1="7.05" x2="4.45" y2="-0.75" width="0.05" layer="39"/>
+<wire x1="4.45" y1="-0.75" x2="-4.45" y2="-0.75" width="0.05" layer="39"/>
+<text x="-5" y="8" size="0.8128" layer="25">&gt;NAME</text>
+<text x="-5" y="-2" size="0.8128" layer="27">&gt;VALUE</text>
+<smd name="1" x="-1.6" y="6.1" dx="0.5" dy="1.4" layer="1"/>
+<smd name="2" x="-0.8" y="6.1" dx="0.5" dy="1.4" layer="1"/>
+<smd name="3" x="0" y="6.1" dx="0.5" dy="1.4" layer="1"/>
+<smd name="4" x="0.8" y="6.1" dx="0.5" dy="1.4" layer="1"/>
+<smd name="5" x="1.6" y="6.1" dx="0.5" dy="1.4" layer="1"/>
+<pad name="S1" x="-3.65" y="3.7" drill="0.7" diameter="1.1" shape="long" rot="R90"/>
+<pad name="S2" x="3.65" y="3.7" drill="0.7" diameter="1.1" shape="long" rot="R90"/>
+<smd name="S3" x="-2.675" y="0.9" dx="0.8" dy="2.35" layer="1" rot="R90"/>
+<smd name="S4" x="2.675" y="0.9" dx="0.8" dy="2.35" layer="1" rot="R90"/>
+</package>
+</packages>
+</library>
+<library name="FA-238">
+<packages>
+<package name="OSCCC320X250X70-4N">
+<wire x1="-1.6" y1="-0.95" x2="-1.3" y2="-1.25" width="0.1" layer="51" curve="-90"/>
+<wire x1="-1.3" y1="-1.25" x2="1.3" y2="-1.25" width="0.1" layer="51"/>
+<wire x1="1.3" y1="-1.25" x2="1.6" y2="-0.95" width="0.1" layer="51" curve="-90"/>
+<wire x1="1.6" y1="-0.95" x2="1.6" y2="0.95" width="0.1" layer="51"/>
+<wire x1="1.6" y1="0.95" x2="1.3" y2="1.25" width="0.1" layer="51" curve="-90"/>
+<wire x1="1.3" y1="1.25" x2="-1.3" y2="1.25" width="0.1" layer="51"/>
+<wire x1="-1.3" y1="1.25" x2="-1.6" y2="0.95" width="0.1" layer="51" curve="-90"/>
+<wire x1="-1.6" y1="0.95" x2="-1.6" y2="-0.95" width="0.1" layer="51"/>
+<text x="-2.00163125" y="1.75141875" size="0.50040625" layer="25">&gt;NAME</text>
+<text x="-2.003590625" y="-2.25403125" size="0.500896875" layer="27">&gt;VALUE</text>
+<smd name="4" x="-1.1" y="0.8" dx="1.4" dy="1.2" layer="1"/>
+<smd name="3" x="1.1" y="0.8" dx="1.4" dy="1.2" layer="1"/>
+<smd name="1" x="-1.1" y="-0.8" dx="1.4" dy="1.2" layer="1"/>
+<smd name="2" x="1.1" y="-0.8" dx="1.4" dy="1.2" layer="1"/>
+</package>
+</packages>
+</library>
+<library name="TL3342F160QG_TR">
+<packages>
+<package name="SW_TL3342F160QG/TR">
+<text x="-4.004890625" y="4.004890625" size="0.81379375" layer="25">&gt;NAME</text>
+<text x="-4.008159375" y="-5.0102" size="0.814459375" layer="27">&gt;VALUE</text>
+<smd name="3" x="-3.15" y="1.9" dx="1.7" dy="1" layer="1"/>
+<smd name="1" x="-3.15" y="-1.9" dx="1.7" dy="1" layer="1"/>
+<smd name="4" x="3.15" y="1.9" dx="1.7" dy="1" layer="1"/>
+<smd name="2" x="3.15" y="-1.9" dx="1.7" dy="1" layer="1"/>
 </package>
 </packages>
 </library>
@@ -1521,575 +1658,562 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="D1" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="22.86" y="97.79" smashed="yes" rot="MR270">
-<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="125.73" y="8.89" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="125.73" y="8.89" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="125.73" y="8.89" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MF" value="Diodes Inc." x="125.73" y="8.89" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MP" value="BAV21W-7-F" x="125.73" y="8.89" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="21.733909375" y="100.417540625" size="1.01698125" layer="26" rot="MR270"/>
-<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="125.73" y="8.89" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" x="24.98858125" y="100.41943125" size="1.017709375" layer="28" rot="MR270"/>
+<element name="D1" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="3.175" y="61.595" smashed="yes" rot="MR90">
+<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="-99.695" y="150.495" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="-99.695" y="150.495" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="-99.695" y="150.495" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MF" value="Diodes Inc." x="-99.695" y="150.495" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MP" value="BAV21W-7-F" x="-99.695" y="150.495" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="4.301090625" y="58.967459375" size="1.01698125" layer="26" rot="MR90"/>
+<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="-99.695" y="150.495" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="1.04641875" y="58.96556875" size="1.017709375" layer="28" rot="MR90"/>
 </element>
-<element name="D10" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="22.86" y="54.61" smashed="yes" rot="MR270">
-<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="133.35" y="-15.24" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="133.35" y="-15.24" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="133.35" y="-15.24" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MF" value="Diodes Inc." x="133.35" y="-15.24" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MP" value="BAV21W-7-F" x="133.35" y="-15.24" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="21.733909375" y="57.237540625" size="1.01698125" layer="26" rot="MR270"/>
-<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="133.35" y="-15.24" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" x="24.98858125" y="57.23943125" size="1.017709375" layer="28" rot="MR270"/>
+<element name="D10" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="3.175" y="23.495" smashed="yes" rot="MR90">
+<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="-107.315" y="93.345" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="-107.315" y="93.345" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="-107.315" y="93.345" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MF" value="Diodes Inc." x="-107.315" y="93.345" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MP" value="BAV21W-7-F" x="-107.315" y="93.345" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="4.301090625" y="20.867459375" size="1.01698125" layer="26" rot="MR90"/>
+<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="-107.315" y="93.345" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="1.04641875" y="20.86556875" size="1.017709375" layer="28" rot="MR90"/>
 </element>
-<element name="D11" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="44.45" y="54.61" smashed="yes" rot="MR270">
-<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="154.94" y="-25.4" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="154.94" y="-25.4" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="154.94" y="-25.4" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MF" value="Diodes Inc." x="154.94" y="-25.4" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MP" value="BAV21W-7-F" x="154.94" y="-25.4" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="43.323909375" y="57.237540625" size="1.01698125" layer="26" rot="MR270"/>
-<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="154.94" y="-25.4" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" x="46.57858125" y="57.23943125" size="1.017709375" layer="28" rot="MR270"/>
+<element name="D11" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="22.225" y="23.495" smashed="yes" rot="MR90">
+<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="-88.265" y="103.505" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="-88.265" y="103.505" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="-88.265" y="103.505" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MF" value="Diodes Inc." x="-88.265" y="103.505" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MP" value="BAV21W-7-F" x="-88.265" y="103.505" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="23.351090625" y="20.867459375" size="1.01698125" layer="26" rot="MR90"/>
+<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="-88.265" y="103.505" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="20.09641875" y="20.86556875" size="1.017709375" layer="28" rot="MR90"/>
 </element>
-<element name="D12" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="66.04" y="54.61" smashed="yes" rot="MR270">
-<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="176.53" y="-35.56" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="176.53" y="-35.56" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="176.53" y="-35.56" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MF" value="Diodes Inc." x="176.53" y="-35.56" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MP" value="BAV21W-7-F" x="176.53" y="-35.56" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="64.913909375" y="57.237540625" size="1.01698125" layer="26" rot="MR270"/>
-<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="176.53" y="-35.56" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" x="68.16858125" y="57.23943125" size="1.017709375" layer="28" rot="MR270"/>
+<element name="D12" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="53.975" y="23.495" smashed="yes" rot="MR90">
+<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="-56.515" y="113.665" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="-56.515" y="113.665" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="-56.515" y="113.665" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MF" value="Diodes Inc." x="-56.515" y="113.665" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MP" value="BAV21W-7-F" x="-56.515" y="113.665" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="55.101090625" y="20.867459375" size="1.01698125" layer="26" rot="MR90"/>
+<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="-56.515" y="113.665" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="51.84641875" y="20.86556875" size="1.017709375" layer="28" rot="MR90"/>
 </element>
-<element name="D13" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="87.63" y="54.61" smashed="yes" rot="MR270">
-<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="198.12" y="-45.72" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="198.12" y="-45.72" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="198.12" y="-45.72" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MF" value="Diodes Inc." x="198.12" y="-45.72" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MP" value="BAV21W-7-F" x="198.12" y="-45.72" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="86.503909375" y="57.237540625" size="1.01698125" layer="26" rot="MR270"/>
-<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="198.12" y="-45.72" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" x="89.75858125" y="57.23943125" size="1.017709375" layer="28" rot="MR270"/>
+<element name="D13" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="73.025" y="23.495" smashed="yes" rot="MR90">
+<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="-37.465" y="123.825" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="-37.465" y="123.825" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="-37.465" y="123.825" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MF" value="Diodes Inc." x="-37.465" y="123.825" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MP" value="BAV21W-7-F" x="-37.465" y="123.825" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="74.151090625" y="20.867459375" size="1.01698125" layer="26" rot="MR90"/>
+<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="-37.465" y="123.825" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="70.89641875" y="20.86556875" size="1.017709375" layer="28" rot="MR90"/>
 </element>
-<element name="D3" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="44.45" y="97.79" smashed="yes" rot="MR270">
-<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="147.32" y="-1.27" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="147.32" y="-1.27" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="147.32" y="-1.27" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MF" value="Diodes Inc." x="147.32" y="-1.27" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MP" value="BAV21W-7-F" x="147.32" y="-1.27" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="43.323909375" y="100.417540625" size="1.01698125" layer="26" rot="MR270"/>
-<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="147.32" y="-1.27" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" x="46.57858125" y="100.41943125" size="1.017709375" layer="28" rot="MR270"/>
+<element name="D3" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="22.225" y="61.595" smashed="yes" rot="MR90">
+<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="-80.645" y="160.655" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="-80.645" y="160.655" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="-80.645" y="160.655" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MF" value="Diodes Inc." x="-80.645" y="160.655" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MP" value="BAV21W-7-F" x="-80.645" y="160.655" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="23.351090625" y="58.967459375" size="1.01698125" layer="26" rot="MR90"/>
+<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="-80.645" y="160.655" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="20.09641875" y="58.96556875" size="1.017709375" layer="28" rot="MR90"/>
 </element>
-<element name="D4" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="22.86" y="76.2" smashed="yes" rot="MR270">
-<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="125.73" y="-33.02" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="125.73" y="-33.02" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="125.73" y="-33.02" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MF" value="Diodes Inc." x="125.73" y="-33.02" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MP" value="BAV21W-7-F" x="125.73" y="-33.02" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="21.733909375" y="78.827540625" size="1.01698125" layer="26" rot="MR270"/>
-<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="125.73" y="-33.02" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" x="24.98858125" y="78.82943125" size="1.017709375" layer="28" rot="MR270"/>
+<element name="D4" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="3.175" y="52.705" smashed="yes" rot="MR270">
+<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="106.045" y="-56.515" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="106.045" y="-56.515" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="106.045" y="-56.515" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MF" value="Diodes Inc." x="106.045" y="-56.515" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MP" value="BAV21W-7-F" x="106.045" y="-56.515" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="NAME" x="2.048909375" y="55.332540625" size="1.01698125" layer="26" rot="MR270"/>
+<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="106.045" y="-56.515" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="5.30358125" y="55.33443125" size="1.017709375" layer="28" rot="MR270"/>
 </element>
-<element name="D5" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="44.45" y="76.2" smashed="yes" rot="MR270">
-<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="154.94" y="57.15" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="154.94" y="57.15" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="154.94" y="57.15" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MF" value="Diodes Inc." x="154.94" y="57.15" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MP" value="BAV21W-7-F" x="154.94" y="57.15" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="43.323909375" y="78.827540625" size="1.01698125" layer="26" rot="MR270"/>
-<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="154.94" y="57.15" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" x="46.57858125" y="78.82943125" size="1.017709375" layer="28" rot="MR270"/>
+<element name="D5" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="22.225" y="52.705" smashed="yes" rot="MR270">
+<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="132.715" y="33.655" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="132.715" y="33.655" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="132.715" y="33.655" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MF" value="Diodes Inc." x="132.715" y="33.655" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MP" value="BAV21W-7-F" x="132.715" y="33.655" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="NAME" x="21.098909375" y="55.332540625" size="1.01698125" layer="26" rot="MR270"/>
+<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="132.715" y="33.655" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="24.35358125" y="55.33443125" size="1.017709375" layer="28" rot="MR270"/>
 </element>
-<element name="D6" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="66.04" y="97.79" smashed="yes" rot="MR270">
-<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="176.53" y="68.58" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="176.53" y="68.58" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="176.53" y="68.58" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MF" value="Diodes Inc." x="176.53" y="68.58" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MP" value="BAV21W-7-F" x="176.53" y="68.58" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="64.913909375" y="100.417540625" size="1.01698125" layer="26" rot="MR270"/>
-<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="176.53" y="68.58" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" x="68.16858125" y="100.41943125" size="1.017709375" layer="28" rot="MR270"/>
+<element name="D6" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="53.975" y="61.595" smashed="yes" rot="MR90">
+<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="-56.515" y="90.805" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="-56.515" y="90.805" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="-56.515" y="90.805" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MF" value="Diodes Inc." x="-56.515" y="90.805" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MP" value="BAV21W-7-F" x="-56.515" y="90.805" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="55.101090625" y="58.967459375" size="1.01698125" layer="26" rot="MR90"/>
+<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="-56.515" y="90.805" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="51.84641875" y="58.96556875" size="1.017709375" layer="28" rot="MR90"/>
 </element>
-<element name="D7" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="87.63" y="97.79" smashed="yes" rot="MR270">
-<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="198.12" y="58.42" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="198.12" y="58.42" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="198.12" y="58.42" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MF" value="Diodes Inc." x="198.12" y="58.42" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MP" value="BAV21W-7-F" x="198.12" y="58.42" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="86.503909375" y="100.417540625" size="1.01698125" layer="26" rot="MR270"/>
-<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="198.12" y="58.42" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" x="89.75858125" y="100.41943125" size="1.017709375" layer="28" rot="MR270"/>
+<element name="D7" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="73.025" y="61.595" smashed="yes" rot="MR90">
+<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="-37.465" y="100.965" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="-37.465" y="100.965" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="-37.465" y="100.965" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MF" value="Diodes Inc." x="-37.465" y="100.965" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MP" value="BAV21W-7-F" x="-37.465" y="100.965" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="74.151090625" y="58.967459375" size="1.01698125" layer="26" rot="MR90"/>
+<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="-37.465" y="100.965" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="70.89641875" y="58.96556875" size="1.017709375" layer="28" rot="MR90"/>
 </element>
-<element name="D8" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="66.04" y="76.2" smashed="yes" rot="MR270">
-<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="176.53" y="26.67" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="176.53" y="26.67" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="176.53" y="26.67" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MF" value="Diodes Inc." x="176.53" y="26.67" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MP" value="BAV21W-7-F" x="176.53" y="26.67" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="64.913909375" y="78.827540625" size="1.01698125" layer="26" rot="MR270"/>
-<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="176.53" y="26.67" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" x="68.16858125" y="78.82943125" size="1.017709375" layer="28" rot="MR270"/>
+<element name="D8" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="53.975" y="52.705" smashed="yes" rot="MR270">
+<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="164.465" y="3.175" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="164.465" y="3.175" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="164.465" y="3.175" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MF" value="Diodes Inc." x="164.465" y="3.175" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MP" value="BAV21W-7-F" x="164.465" y="3.175" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="NAME" x="52.848909375" y="55.332540625" size="1.01698125" layer="26" rot="MR270"/>
+<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="164.465" y="3.175" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="56.10358125" y="55.33443125" size="1.017709375" layer="28" rot="MR270"/>
 </element>
-<element name="D9" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="87.63" y="76.2" smashed="yes" rot="MR270">
-<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="198.12" y="16.51" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="198.12" y="16.51" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="198.12" y="16.51" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MF" value="Diodes Inc." x="198.12" y="16.51" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MP" value="BAV21W-7-F" x="198.12" y="16.51" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="86.503909375" y="78.827540625" size="1.01698125" layer="26" rot="MR270"/>
-<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="198.12" y="16.51" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" x="89.75858125" y="78.82943125" size="1.017709375" layer="28" rot="MR270"/>
+<element name="D9" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="73.025" y="52.705" smashed="yes" rot="MR270">
+<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="183.515" y="-6.985" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="183.515" y="-6.985" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="183.515" y="-6.985" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MF" value="Diodes Inc." x="183.515" y="-6.985" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MP" value="BAV21W-7-F" x="183.515" y="-6.985" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="NAME" x="71.898909375" y="55.332540625" size="1.01698125" layer="26" rot="MR270"/>
+<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="183.515" y="-6.985" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="75.15358125" y="55.33443125" size="1.017709375" layer="28" rot="MR270"/>
 </element>
-<element name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4.7k" x="100.33" y="99.06" smashed="yes" rot="MR90">
-<attribute name="NAME" x="100.965" y="98.425" size="1.27" layer="26" rot="MR90"/>
-<attribute name="SPICEPREFIX" value="R" x="-15.24" y="163.83" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="VALUE" x="98.425" y="98.425" size="1.27" layer="28" rot="MR90"/>
+<element name="U$1" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="9.525" y="66.675" smashed="yes"/>
+<element name="U$10" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="66.675" y="47.625" smashed="yes"/>
+<element name="U$11" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="66.675" y="28.575" smashed="yes"/>
+<element name="U$12" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="66.675" y="66.675" smashed="yes"/>
+<element name="U$2" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="9.525" y="47.625" smashed="yes"/>
+<element name="U$3" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="9.525" y="28.575" smashed="yes"/>
+<element name="U$4" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="28.575" y="66.675" smashed="yes"/>
+<element name="U$5" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="28.575" y="47.625" smashed="yes"/>
+<element name="U$6" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="28.575" y="28.575" smashed="yes"/>
+<element name="U$7" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="47.625" y="66.675" smashed="yes"/>
+<element name="U$8" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="47.625" y="47.625" smashed="yes"/>
+<element name="U$9" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="47.625" y="28.575" smashed="yes"/>
+<element name="U$13" library="CHERRY_MX" package="CHERRY_MX_1_2" value="CHERRY_MXCHERRY_MX_1_2" x="57.15" y="9.525" smashed="yes"/>
+<element name="U$14" library="CHERRY_MX" package="CHERRY_MX_1_2" value="CHERRY_MXCHERRY_MX_1_2" x="19.05" y="9.525" smashed="yes"/>
+<element name="U1" library="ATMEGA32U4-AUR" package="QFP80P1200X1200X120-44N" value="ATMEGA32U4-AUR" x="40.005" y="38.735" smashed="yes" rot="MR270">
+<attribute name="AVAILABILITY" value="Unavailable" x="40.005" y="38.735" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="DESCRIPTION" value=" ATmega Series 16 MHz 32 KB Flash 2.5 KB SRAM 8-Bit Microcontroller - TQFP-44 " x="40.005" y="38.735" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MF" value="Microchip" x="40.005" y="38.735" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MP" value="ATMEGA32U4-AUR" x="40.005" y="38.735" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="NAME" x="32.275" y="46.46" size="1.27" layer="26" rot="MR270"/>
+<attribute name="PACKAGE" value="TQFP-44 Microchip" x="40.005" y="38.735" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="PRICE" value="None" x="40.005" y="38.735" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="47.735" y="46.46" size="1.27" layer="28" rot="MR270" align="top-left"/>
 </element>
-<element name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4.7k" x="100.33" y="77.47" smashed="yes" rot="MR270">
-<attribute name="NAME" x="99.695" y="78.105" size="1.27" layer="26" rot="MR270"/>
-<attribute name="SPICEPREFIX" value="R" x="215.9" y="7.62" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" x="102.235" y="78.105" size="1.27" layer="28" rot="MR270"/>
+<element name="J1" library="UX60SC-MB-5S8" package="HIROSE_UX60SC-MB-5S8" value="UX60SC-MB-5S8" x="38.1" y="76.2" smashed="yes" rot="MR180">
+<attribute name="AVAILABILITY" value="Unavailable" x="38.1" y="76.2" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DESCRIPTION" value=" Conn Mini USB 2.0 Type B RCP 5 POS 0.8mm Solder RA SMD 5 Terminal 1 Port Embossed T/R " x="38.1" y="76.2" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MF" value="Hirose" x="38.1" y="76.2" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MP" value="UX60SC-MB-5S8" x="38.1" y="76.2" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="33.1" y="68.2" size="0.8128" layer="26" rot="MR180"/>
+<attribute name="PACKAGE" value="None" x="38.1" y="76.2" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PRICE" value="None" x="38.1" y="76.2" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VALUE" x="33.1" y="78.2" size="0.8128" layer="28" rot="MR180"/>
 </element>
-<element name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4.7k" x="100.33" y="55.88" smashed="yes" rot="MR90">
-<attribute name="NAME" x="100.965" y="55.245" size="1.27" layer="26" rot="MR90"/>
-<attribute name="SPICEPREFIX" value="R" x="-15.24" y="130.81" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="VALUE" x="98.425" y="55.245" size="1.27" layer="28" rot="MR90"/>
+<element name="X1" library="FA-238" package="OSCCC320X250X70-4N" value="FA-238" x="51.435" y="38.735" smashed="yes" rot="MR270">
+<attribute name="AVAILABILITY" value="Unavailable" x="51.435" y="38.735" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="DESCRIPTION" value=" " x="51.435" y="38.735" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MF" value="EPSON" x="51.435" y="38.735" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MP" value="FA-238" x="51.435" y="38.735" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="NAME" x="49.68358125" y="40.73663125" size="0.50040625" layer="26" rot="MR270"/>
+<attribute name="PACKAGE" value="SMD-4 Epson" x="51.435" y="38.735" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="PRICE" value="None" x="51.435" y="38.735" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="53.68903125" y="40.738590625" size="0.500896875" layer="28" rot="MR270"/>
 </element>
-<element name="SV3" library="con-lstb" library_urn="urn:adsk.eagle:library:162" package="MA04-1" package3d_urn="urn:adsk.eagle:package:8337/1" value="" x="55.88" y="107.95" smashed="yes" rot="R180">
-<attribute name="MF" value="" x="21.59" y="223.52" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="21.59" y="223.52" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="60.96" y="106.299" size="1.27" layer="25" ratio="10" rot="R180"/>
-<attribute name="OC_FARNELL" value="unknown" x="21.59" y="223.52" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="21.59" y="223.52" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="55.245" y="106.299" size="1.27" layer="27" ratio="10" rot="R180"/>
+<element name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value=".1uF" x="29.21" y="37.465" smashed="yes" rot="MR90">
+<attribute name="NAME" x="30.48" y="36.195" size="1.27" layer="26" rot="MR90"/>
+<attribute name="SPICEPREFIX" value="C" x="29.21" y="37.465" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="26.67" y="36.195" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="SV4" library="con-lstb" library_urn="urn:adsk.eagle:library:162" package="MA03-1" package3d_urn="urn:adsk.eagle:package:8339/1" value="" x="144.78" y="97.79" smashed="yes" rot="MR270">
-<attribute name="MF" value="" x="260.35" y="41.91" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MPN" value="" x="260.35" y="41.91" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="143.129" y="101.6" size="1.27" layer="26" ratio="10" rot="MR270"/>
-<attribute name="OC_FARNELL" value="unknown" x="260.35" y="41.91" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="260.35" y="41.91" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" x="147.701" y="101.6" size="1.27" layer="28" ratio="10" rot="MR270"/>
+<element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value=".1uF" x="26.035" y="37.465" smashed="yes" rot="MR90">
+<attribute name="NAME" x="27.305" y="36.195" size="1.27" layer="26" rot="MR90"/>
+<attribute name="SPICEPREFIX" value="C" x="26.035" y="37.465" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="23.495" y="36.195" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="U$1" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="24.13" y="88.9" smashed="yes"/>
-<element name="U$10" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="88.9" y="67.31" smashed="yes"/>
-<element name="U$11" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="88.9" y="45.72" smashed="yes"/>
-<element name="U$12" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="88.9" y="88.9" smashed="yes"/>
-<element name="U$2" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="24.13" y="67.31" smashed="yes"/>
-<element name="U$3" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="24.13" y="45.72" smashed="yes"/>
-<element name="U$4" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="45.72" y="88.9" smashed="yes"/>
-<element name="U$5" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="45.72" y="67.31" smashed="yes"/>
-<element name="U$6" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="45.72" y="45.72" smashed="yes"/>
-<element name="U$7" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="67.31" y="88.9" smashed="yes"/>
-<element name="U$8" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="67.31" y="67.31" smashed="yes"/>
-<element name="U$9" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="67.31" y="45.72" smashed="yes"/>
-<element name="U$13" library="CHERRY_MX" package="CHERRY_MX_1_2" value="CHERRY_MXCHERRY_MX_1_2" x="147.32" y="22.86" smashed="yes"/>
-<element name="U$14" library="CHERRY_MX" package="CHERRY_MX_1_6" value="CHERRY_MXCHERRY_MX_1_6" x="64.77" y="22.86" smashed="yes"/>
-<element name="D2" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="146.05" y="31.75" smashed="yes" rot="MR270">
-<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="146.05" y="31.75" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="146.05" y="31.75" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="146.05" y="31.75" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MF" value="Diodes Inc." x="146.05" y="31.75" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MP" value="BAV21W-7-F" x="146.05" y="31.75" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="144.923909375" y="34.377540625" size="1.01698125" layer="26" rot="MR270"/>
-<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="146.05" y="31.75" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" x="148.17858125" y="34.37943125" size="1.017709375" layer="28" rot="MR270"/>
+<element name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value=".1uF" x="22.86" y="37.465" smashed="yes" rot="MR90">
+<attribute name="NAME" x="24.13" y="36.195" size="1.27" layer="26" rot="MR90"/>
+<attribute name="SPICEPREFIX" value="C" x="22.86" y="37.465" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="20.32" y="36.195" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="D14" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="63.5" y="31.75" smashed="yes" rot="MR270">
-<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="63.5" y="31.75" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="63.5" y="31.75" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="63.5" y="31.75" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MF" value="Diodes Inc." x="63.5" y="31.75" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MP" value="BAV21W-7-F" x="63.5" y="31.75" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="62.373909375" y="34.377540625" size="1.01698125" layer="26" rot="MR270"/>
-<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="63.5" y="31.75" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" x="65.62858125" y="34.37943125" size="1.017709375" layer="28" rot="MR270"/>
+<element name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value=".1uF" x="19.685" y="37.465" smashed="yes" rot="MR90">
+<attribute name="NAME" x="20.955" y="36.195" size="1.27" layer="26" rot="MR90"/>
+<attribute name="SPICEPREFIX" value="C" x="19.685" y="37.465" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="17.145" y="36.195" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4.7k" x="100.33" y="33.02" smashed="yes" rot="MR90">
-<attribute name="NAME" x="100.965" y="32.385" size="1.27" layer="26" rot="MR90"/>
-<attribute name="SPICEPREFIX" value="R" x="100.33" y="33.02" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="VALUE" x="98.425" y="32.385" size="1.27" layer="28" rot="MR90"/>
+<element name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="4.7uF" x="16.51" y="37.465" smashed="yes" rot="MR90">
+<attribute name="NAME" x="17.78" y="36.195" size="1.27" layer="26" rot="MR90"/>
+<attribute name="SPICEPREFIX" value="C" x="16.51" y="37.465" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="13.97" y="36.195" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="SV1" library="con-lstb" library_urn="urn:adsk.eagle:library:162" package="MA04-1" package3d_urn="urn:adsk.eagle:package:8337/1" value="" x="146.05" y="71.12" smashed="yes" rot="R90">
-<attribute name="MF" value="" x="146.05" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="146.05" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="144.399" y="66.04" size="1.27" layer="25" ratio="10" rot="R90"/>
-<attribute name="OC_FARNELL" value="unknown" x="146.05" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="146.05" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="144.399" y="71.755" size="1.27" layer="27" ratio="10" rot="R90"/>
+<element name="SW1" library="TL3342F160QG_TR" package="SW_TL3342F160QG/TR" value="TL3342F160QG/TR" x="63.5" y="38.1" smashed="yes" rot="MR90">
+<attribute name="AVAILABILITY" value="Unavailable" x="63.5" y="38.1" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DESCRIPTION" value=" Switch Tactile Spst-No 0.05a 12v " x="63.5" y="38.1" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MF" value="E-Switch" x="63.5" y="38.1" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MP" value="TL3342F160QG/TR" x="63.5" y="38.1" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="67.504890625" y="34.095109375" size="0.81379375" layer="26" rot="MR90"/>
+<attribute name="PACKAGE" value="FakePackage u" x="63.5" y="38.1" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="PRICE" value="None" x="63.5" y="38.1" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="58.4898" y="34.091840625" size="0.814459375" layer="28" rot="MR90"/>
+</element>
+<element name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k" x="57.15" y="43.815" smashed="yes" rot="MR270">
+<attribute name="NAME" x="55.88" y="44.45" size="1.27" layer="26" rot="MR270"/>
+<attribute name="SPICEPREFIX" value="R" x="57.15" y="43.815" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="59.69" y="44.45" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k" x="38.1" y="29.21" smashed="yes" rot="MR0">
+<attribute name="NAME" x="38.735" y="30.48" size="1.27" layer="26" rot="MR0"/>
+<attribute name="SPICEPREFIX" value="R" x="38.1" y="29.21" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="VALUE" x="38.735" y="26.67" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="22" x="36.195" y="62.23" smashed="yes" rot="MR270">
+<attribute name="NAME" x="34.925" y="62.865" size="1.27" layer="26" rot="MR270"/>
+<attribute name="SPICEPREFIX" value="R" x="36.195" y="62.23" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="38.735" y="62.865" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="22" x="40.005" y="62.23" smashed="yes" rot="MR270">
+<attribute name="NAME" x="38.735" y="62.865" size="1.27" layer="26" rot="MR270"/>
+<attribute name="SPICEPREFIX" value="R" x="40.005" y="62.23" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="42.545" y="62.865" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="4.7uF" x="39.37" y="55.245" smashed="yes" rot="MR270">
+<attribute name="NAME" x="38.1" y="56.515" size="1.27" layer="26" rot="MR270"/>
+<attribute name="SPICEPREFIX" value="C" x="39.37" y="55.245" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="41.91" y="56.515" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="U$15" library="CHERRY_MX" package="CHERRY_MX_1_2" value="CHERRY_MXCHERRY_MX_1_2" x="38.1" y="9.525" smashed="yes"/>
+<element name="D16" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="22.225" y="4.445" smashed="yes" rot="MR90">
+<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="61.595" y="4.445" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="61.595" y="4.445" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="61.595" y="4.445" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MF" value="Diodes Inc." x="61.595" y="4.445" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MP" value="BAV21W-7-F" x="61.595" y="4.445" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="23.351090625" y="1.817459375" size="1.01698125" layer="26" rot="MR90"/>
+<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="61.595" y="4.445" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="20.09641875" y="1.81556875" size="1.017709375" layer="28" rot="MR90"/>
+</element>
+<element name="D17" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="3.175" y="4.445" smashed="yes" rot="MR90">
+<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="36.83" y="-5.08" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="36.83" y="-5.08" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="36.83" y="-5.08" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MF" value="Diodes Inc." x="36.83" y="-5.08" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MP" value="BAV21W-7-F" x="36.83" y="-5.08" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="4.301090625" y="1.817459375" size="1.01698125" layer="26" rot="MR90"/>
+<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="36.83" y="-5.08" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="1.04641875" y="1.81556875" size="1.017709375" layer="28" rot="MR90"/>
+</element>
+<element name="D18" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="53.975" y="4.445" smashed="yes" rot="MR90">
+<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="81.915" y="-14.605" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="81.915" y="-14.605" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="81.915" y="-14.605" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MF" value="Diodes Inc." x="81.915" y="-14.605" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MP" value="BAV21W-7-F" x="81.915" y="-14.605" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="55.101090625" y="1.817459375" size="1.01698125" layer="26" rot="MR90"/>
+<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="81.915" y="-14.605" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="51.84641875" y="1.81556875" size="1.017709375" layer="28" rot="MR90"/>
+</element>
+<element name="D19" library="BAV21W-7-F" package="SOD3715X135N" value="BAV21W-7-F" x="73.025" y="4.445" smashed="yes" rot="MR90">
+<attribute name="DESCRIPTION" value=" DIODE, SWITCH, 200V, 0.25W, SOD123; Diode Type: Switching; Forward Current If_AV_ " x="95.25" y="-24.13" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="BAV21W-FDICT-ND" x="95.25" y="-24.13" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/diodes-incorporated/BAV21W-7-F/BAV21W-FDICT-ND/717830?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="95.25" y="-24.13" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MF" value="Diodes Inc." x="95.25" y="-24.13" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MP" value="BAV21W-7-F" x="95.25" y="-24.13" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="74.151090625" y="1.817459375" size="1.01698125" layer="26" rot="MR90"/>
+<attribute name="PACKAGE" value="SOD-123 Diodes Inc." x="95.25" y="-24.13" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="70.89641875" y="1.81556875" size="1.017709375" layer="28" rot="MR90"/>
+</element>
+<element name="U$16" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="66.675" y="9.525" smashed="yes"/>
+<element name="U$17" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="47.625" y="9.525" smashed="yes"/>
+<element name="U$18" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="9.525" y="9.525" smashed="yes"/>
+<element name="U$19" library="CHERRY_MX" package="CHERRY_MX" value="CHERRY_MX" x="28.575" y="9.525" smashed="yes"/>
+<element name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF" x="57.15" y="40.005" smashed="yes" rot="MR180">
+<attribute name="NAME" x="55.88" y="38.735" size="1.27" layer="26" rot="MR180"/>
+<attribute name="SPICEPREFIX" value="C" x="57.15" y="40.005" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VALUE" x="55.88" y="42.545" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF" x="57.15" y="36.83" smashed="yes" rot="MR0">
+<attribute name="NAME" x="58.42" y="38.1" size="1.27" layer="26" rot="MR0"/>
+<attribute name="SPICEPREFIX" value="C" x="57.15" y="36.83" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="VALUE" x="58.42" y="34.29" size="1.27" layer="28" rot="MR0"/>
 </element>
 </elements>
 <signals>
 <signal name="GND">
-<contactref element="SV4" pad="2"/>
-<polygon width="0.1524" layer="1">
-<vertex x="2.54" y="2.54"/>
-<vertex x="168.91" y="2.54"/>
-<vertex x="168.91" y="111.76"/>
-<vertex x="2.54" y="111.76"/>
-</polygon>
 <polygon width="0.1524" layer="16">
-<vertex x="1.27" y="113.03"/>
-<vertex x="1.27" y="1.27"/>
-<vertex x="170.18" y="1.27"/>
-<vertex x="170.18" y="113.03"/>
+<vertex x="-0.635" y="77.47"/>
+<vertex x="-0.635" y="-0.635"/>
+<vertex x="77.47" y="-0.635"/>
+<vertex x="77.47" y="77.47"/>
 </polygon>
-<contactref element="R1" pad="1"/>
-<contactref element="R2" pad="1"/>
-<contactref element="R3" pad="1"/>
-<contactref element="R4" pad="1"/>
-</signal>
-<signal name="DVCC">
-<contactref element="SV4" pad="3"/>
+<contactref element="C1" pad="2"/>
+<contactref element="C2" pad="2"/>
+<contactref element="C3" pad="2"/>
+<contactref element="C4" pad="2"/>
+<contactref element="C5" pad="2"/>
+<contactref element="SW1" pad="4"/>
+<contactref element="SW1" pad="3"/>
+<contactref element="R6" pad="1"/>
+<contactref element="J1" pad="5"/>
+<contactref element="J1" pad="S1"/>
+<contactref element="J1" pad="S3"/>
+<contactref element="J1" pad="S2"/>
+<contactref element="J1" pad="S4"/>
+<contactref element="C6" pad="1"/>
+<contactref element="U1" pad="5"/>
+<contactref element="X1" pad="4"/>
+<contactref element="X1" pad="2"/>
+<contactref element="C8" pad="1"/>
+<contactref element="C7" pad="1"/>
+<contactref element="U1" pad="23"/>
+<contactref element="U1" pad="35"/>
+<contactref element="U1" pad="15"/>
+<contactref element="U1" pad="43"/>
 </signal>
 <signal name="ROW1">
 <contactref element="D4" pad="C"/>
 <contactref element="D5" pad="C"/>
 <contactref element="D8" pad="C"/>
 <contactref element="D9" pad="C"/>
-<contactref element="R2" pad="2"/>
-<contactref element="SV1" pad="3"/>
-<wire x1="44.3484" y1="77.9526" x2="22.86" y2="77.9526" width="0.3048" layer="16"/>
-<wire x1="22.86" y1="77.9526" x2="22.86" y2="78" width="0.3048" layer="16"/>
-<wire x1="44.3484" y1="77.9526" x2="44.45" y2="78" width="0.3048" layer="16"/>
-<wire x1="44.577" y1="77.9526" x2="65.8368" y2="77.9526" width="0.3048" layer="16"/>
-<wire x1="65.8368" y1="77.9526" x2="66.04" y2="78" width="0.3048" layer="16"/>
-<wire x1="44.577" y1="77.9526" x2="44.45" y2="78" width="0.3048" layer="16"/>
-<wire x1="98.0694" y1="77.9526" x2="87.7824" y2="77.9526" width="0.3048" layer="16"/>
-<wire x1="99.441" y1="76.581" x2="98.0694" y2="77.9526" width="0.3048" layer="16"/>
-<wire x1="100.1268" y1="76.581" x2="99.441" y2="76.581" width="0.3048" layer="16"/>
-<wire x1="87.7824" y1="77.9526" x2="87.63" y2="78" width="0.3048" layer="16"/>
-<wire x1="100.1268" y1="76.581" x2="100.33" y2="76.62" width="0.3048" layer="16"/>
-<wire x1="145.3896" y1="72.9234" x2="145.8468" y2="72.4662" width="0.3048" layer="16"/>
-<wire x1="145.161" y1="72.9234" x2="145.3896" y2="72.9234" width="0.3048" layer="16"/>
-<wire x1="142.875" y1="75.2094" x2="145.161" y2="72.9234" width="0.3048" layer="16"/>
-<wire x1="102.6414" y1="75.2094" x2="142.875" y2="75.2094" width="0.3048" layer="16"/>
-<wire x1="101.2698" y1="76.581" x2="102.6414" y2="75.2094" width="0.3048" layer="16"/>
-<wire x1="100.3554" y1="76.581" x2="101.2698" y2="76.581" width="0.3048" layer="16"/>
-<wire x1="145.8468" y1="72.4662" x2="146.05" y2="72.39" width="0.3048" layer="16"/>
-<wire x1="100.3554" y1="76.581" x2="100.33" y2="76.62" width="0.3048" layer="16"/>
-<wire x1="87.5538" y1="77.9526" x2="66.0654" y2="77.9526" width="0.3048" layer="16"/>
-<wire x1="66.0654" y1="77.9526" x2="66.04" y2="78" width="0.3048" layer="16"/>
-<wire x1="87.5538" y1="77.9526" x2="87.63" y2="78" width="0.3048" layer="16"/>
+<wire x1="53.975" y1="54.505" x2="73.025" y2="54.505" width="0" layer="19" extent="16-16"/>
+<wire x1="22.225" y1="54.505" x2="53.975" y2="54.505" width="0" layer="19" extent="16-16"/>
+<wire x1="3.175" y1="54.505" x2="22.225" y2="54.505" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="ROW2">
 <contactref element="D10" pad="C"/>
 <contactref element="D11" pad="C"/>
 <contactref element="D12" pad="C"/>
 <contactref element="D13" pad="C"/>
-<contactref element="R3" pad="2"/>
-<contactref element="SV1" pad="2"/>
-<wire x1="44.3484" y1="56.4642" x2="22.86" y2="56.4642" width="0.3048" layer="16"/>
-<wire x1="22.86" y1="56.4642" x2="22.86" y2="56.41" width="0.3048" layer="16"/>
-<wire x1="44.3484" y1="56.4642" x2="44.45" y2="56.41" width="0.3048" layer="16"/>
-<wire x1="44.577" y1="56.4642" x2="65.8368" y2="56.4642" width="0.3048" layer="16"/>
-<wire x1="65.8368" y1="56.4642" x2="66.04" y2="56.41" width="0.3048" layer="16"/>
-<wire x1="44.577" y1="56.4642" x2="44.45" y2="56.41" width="0.3048" layer="16"/>
-<wire x1="99.2124" y1="56.4642" x2="87.7824" y2="56.4642" width="0.3048" layer="16"/>
-<wire x1="99.441" y1="56.6928" x2="99.2124" y2="56.4642" width="0.3048" layer="16"/>
-<wire x1="100.1268" y1="56.6928" x2="99.441" y2="56.6928" width="0.3048" layer="16"/>
-<wire x1="87.7824" y1="56.4642" x2="87.63" y2="56.41" width="0.3048" layer="16"/>
-<wire x1="100.1268" y1="56.6928" x2="100.33" y2="56.73" width="0.3048" layer="16"/>
-<wire x1="144.7038" y1="69.723" x2="145.8468" y2="69.723" width="0.3048" layer="16"/>
-<wire x1="144.2466" y1="69.2658" x2="144.7038" y2="69.723" width="0.3048" layer="16"/>
-<wire x1="113.6142" y1="69.2658" x2="144.2466" y2="69.2658" width="0.3048" layer="16"/>
-<wire x1="100.8126" y1="56.4642" x2="113.6142" y2="69.2658" width="0.3048" layer="16"/>
-<wire x1="100.584" y1="56.4642" x2="100.8126" y2="56.4642" width="0.3048" layer="16"/>
-<wire x1="100.3554" y1="56.6928" x2="100.584" y2="56.4642" width="0.3048" layer="16"/>
-<wire x1="145.8468" y1="69.723" x2="146.05" y2="69.85" width="0.3048" layer="16"/>
-<wire x1="100.3554" y1="56.6928" x2="100.33" y2="56.73" width="0.3048" layer="16"/>
-<wire x1="87.5538" y1="56.4642" x2="66.0654" y2="56.4642" width="0.3048" layer="16"/>
-<wire x1="66.0654" y1="56.4642" x2="66.04" y2="56.41" width="0.3048" layer="16"/>
-<wire x1="87.5538" y1="56.4642" x2="87.63" y2="56.41" width="0.3048" layer="16"/>
+<wire x1="53.975" y1="21.695" x2="73.025" y2="21.695" width="0" layer="19" extent="16-16"/>
+<wire x1="22.225" y1="21.695" x2="53.975" y2="21.695" width="0" layer="19" extent="16-16"/>
+<wire x1="3.175" y1="21.695" x2="22.225" y2="21.695" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="ROW0">
 <contactref element="D1" pad="C"/>
 <contactref element="D3" pad="C"/>
 <contactref element="D6" pad="C"/>
 <contactref element="D7" pad="C"/>
-<contactref element="R1" pad="2"/>
-<contactref element="SV1" pad="4"/>
-<wire x1="44.3484" y1="99.6696" x2="22.86" y2="99.6696" width="0.3048" layer="16"/>
-<wire x1="22.86" y1="99.6696" x2="22.86" y2="99.59" width="0.3048" layer="16"/>
-<wire x1="44.3484" y1="99.6696" x2="44.45" y2="99.59" width="0.3048" layer="16"/>
-<wire x1="44.577" y1="99.6696" x2="65.8368" y2="99.6696" width="0.3048" layer="16"/>
-<wire x1="65.8368" y1="99.6696" x2="66.04" y2="99.59" width="0.3048" layer="16"/>
-<wire x1="44.577" y1="99.6696" x2="44.45" y2="99.59" width="0.3048" layer="16"/>
-<wire x1="99.2124" y1="99.6696" x2="87.7824" y2="99.6696" width="0.3048" layer="16"/>
-<wire x1="99.441" y1="99.8982" x2="99.2124" y2="99.6696" width="0.3048" layer="16"/>
-<wire x1="100.1268" y1="99.8982" x2="99.441" y2="99.8982" width="0.3048" layer="16"/>
-<wire x1="87.7824" y1="99.6696" x2="87.63" y2="99.59" width="0.3048" layer="16"/>
-<wire x1="100.1268" y1="99.8982" x2="100.33" y2="99.91" width="0.3048" layer="16"/>
-<wire x1="144.9324" y1="74.9808" x2="145.8468" y2="74.9808" width="0.3048" layer="16"/>
-<wire x1="144.2466" y1="75.6666" x2="144.9324" y2="74.9808" width="0.3048" layer="16"/>
-<wire x1="125.5014" y1="75.6666" x2="144.2466" y2="75.6666" width="0.3048" layer="16"/>
-<wire x1="101.2698" y1="99.8982" x2="125.5014" y2="75.6666" width="0.3048" layer="16"/>
-<wire x1="100.3554" y1="99.8982" x2="101.2698" y2="99.8982" width="0.3048" layer="16"/>
-<wire x1="145.8468" y1="74.9808" x2="146.05" y2="74.93" width="0.3048" layer="16"/>
-<wire x1="100.3554" y1="99.8982" x2="100.33" y2="99.91" width="0.3048" layer="16"/>
-<wire x1="87.5538" y1="99.6696" x2="66.0654" y2="99.6696" width="0.3048" layer="16"/>
-<wire x1="66.0654" y1="99.6696" x2="66.04" y2="99.59" width="0.3048" layer="16"/>
-<wire x1="87.5538" y1="99.6696" x2="87.63" y2="99.59" width="0.3048" layer="16"/>
+<wire x1="53.975" y1="59.795" x2="73.025" y2="59.795" width="0" layer="19" extent="16-16"/>
+<wire x1="22.225" y1="59.795" x2="53.975" y2="59.795" width="0" layer="19" extent="16-16"/>
+<wire x1="3.175" y1="59.795" x2="22.225" y2="59.795" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="COL0">
-<contactref element="SV3" pad="4"/>
 <contactref element="U$1" pad="2"/>
 <contactref element="U$2" pad="2"/>
 <contactref element="U$3" pad="2"/>
 <contactref element="U$13" pad="2"/>
-<wire x1="26.7462" y1="61.2648" x2="26.7462" y2="50.9778" width="0.3048" layer="1"/>
-<wire x1="31.7754" y1="66.294" x2="26.7462" y2="61.2648" width="0.3048" layer="1"/>
-<wire x1="31.7754" y1="68.3514" x2="31.7754" y2="66.294" width="0.3048" layer="1"/>
-<wire x1="27.8892" y1="72.2376" x2="31.7754" y2="68.3514" width="0.3048" layer="1"/>
-<wire x1="26.7462" y1="72.2376" x2="27.432" y2="72.2376" width="0.3048" layer="1"/>
-<wire x1="27.432" y1="72.2376" x2="27.8892" y2="72.2376" width="0.3048" layer="1"/>
-<wire x1="26.7462" y1="50.9778" x2="26.67" y2="50.8" width="0.3048" layer="1"/>
-<wire x1="26.7462" y1="72.2376" x2="26.67" y2="72.39" width="0.3048" layer="1"/>
-<wire x1="41.6052" y1="108.1278" x2="51.8922" y2="108.1278" width="0.3048" layer="1"/>
-<wire x1="27.6606" y1="94.1832" x2="41.6052" y2="108.1278" width="0.3048" layer="1"/>
-<wire x1="26.7462" y1="94.1832" x2="27.432" y2="94.1832" width="0.3048" layer="1"/>
-<wire x1="27.432" y1="94.1832" x2="27.6606" y2="94.1832" width="0.3048" layer="1"/>
-<wire x1="51.8922" y1="108.1278" x2="52.07" y2="107.95" width="0.3048" layer="1"/>
-<wire x1="26.7462" y1="94.1832" x2="26.67" y2="93.98" width="0.3048" layer="1"/>
-<wire x1="149.9616" y1="39.0906" x2="149.9616" y2="28.1178" width="0.3048" layer="1"/>
-<wire x1="76.3524" y1="112.6998" x2="149.9616" y2="39.0906" width="0.3048" layer="1"/>
-<wire x1="55.7784" y1="112.6998" x2="76.3524" y2="112.6998" width="0.3048" layer="1"/>
-<wire x1="52.1208" y1="109.0422" x2="55.7784" y2="112.6998" width="0.3048" layer="1"/>
-<wire x1="52.1208" y1="108.1278" x2="52.1208" y2="109.0422" width="0.3048" layer="1"/>
-<wire x1="149.9616" y1="28.1178" x2="149.86" y2="27.94" width="0.3048" layer="1"/>
-<wire x1="52.1208" y1="108.1278" x2="52.07" y2="107.95" width="0.3048" layer="1"/>
-<wire x1="27.432" y1="83.6676" x2="27.432" y2="72.2376" width="0.3048" layer="1"/>
-<wire x1="31.7754" y1="88.011" x2="27.432" y2="83.6676" width="0.3048" layer="1"/>
-<wire x1="31.7754" y1="89.8398" x2="31.7754" y2="88.011" width="0.3048" layer="1"/>
-<wire x1="27.432" y1="94.1832" x2="31.7754" y2="89.8398" width="0.3048" layer="1"/>
-<wire x1="27.432" y1="72.2376" x2="26.67" y2="72.39" width="0.3048" layer="1"/>
-<wire x1="27.432" y1="94.1832" x2="26.67" y2="93.98" width="0.3048" layer="1"/>
+<contactref element="U$17" pad="2"/>
+<wire x1="12.065" y1="52.705" x2="12.065" y2="71.755" width="0" layer="19" extent="1-1"/>
+<wire x1="12.065" y1="33.655" x2="12.065" y2="52.705" width="0" layer="19" extent="1-1"/>
+<wire x1="50.165" y1="14.605" x2="12.065" y2="33.655" width="0" layer="19" extent="1-1"/>
+<wire x1="59.69" y1="14.605" x2="50.165" y2="14.605" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="COL1">
-<contactref element="SV3" pad="3"/>
 <contactref element="U$4" pad="2"/>
 <contactref element="U$5" pad="2"/>
 <contactref element="U$6" pad="2"/>
 <contactref element="U$14" pad="2"/>
-<wire x1="54.4068" y1="106.0704" x2="54.4068" y2="107.8992" width="0.3048" layer="1"/>
-<wire x1="49.149" y1="100.8126" x2="54.4068" y2="106.0704" width="0.3048" layer="1"/>
-<wire x1="49.149" y1="94.869" x2="49.149" y2="100.8126" width="0.3048" layer="1"/>
-<wire x1="48.26" y1="93.98" x2="48.6918" y2="94.4118" width="0.3048" layer="1"/>
-<wire x1="48.6918" y1="94.4118" x2="49.149" y2="94.869" width="0.3048" layer="1"/>
-<wire x1="54.4068" y1="107.8992" x2="54.61" y2="107.95" width="0.3048" layer="1"/>
-<wire x1="48.2346" y1="82.7532" x2="48.2346" y2="72.4662" width="0.3048" layer="1"/>
-<wire x1="53.2638" y1="87.7824" x2="48.2346" y2="82.7532" width="0.3048" layer="1"/>
-<wire x1="53.2638" y1="89.8398" x2="53.2638" y2="87.7824" width="0.3048" layer="1"/>
-<wire x1="48.6918" y1="94.4118" x2="53.2638" y2="89.8398" width="0.3048" layer="1"/>
-<wire x1="48.2346" y1="72.4662" x2="48.26" y2="72.39" width="0.3048" layer="1"/>
-<wire x1="48.4632" y1="94.1832" x2="48.26" y2="93.98" width="0.3048" layer="1"/>
-<wire x1="67.437" y1="32.4612" x2="67.437" y2="28.1178" width="0.3048" layer="1"/>
-<wire x1="49.149" y1="50.7492" x2="67.437" y2="32.4612" width="0.3048" layer="1"/>
-<wire x1="48.4632" y1="50.7492" x2="49.149" y2="50.7492" width="0.3048" layer="1"/>
-<wire x1="67.437" y1="28.1178" x2="67.31" y2="27.94" width="0.3048" layer="1"/>
-<wire x1="48.4632" y1="50.7492" x2="48.26" y2="50.8" width="0.3048" layer="1"/>
-<wire x1="49.3776" y1="72.2376" x2="48.4632" y2="72.2376" width="0.3048" layer="1"/>
-<wire x1="53.2638" y1="68.3514" x2="49.3776" y2="72.2376" width="0.3048" layer="1"/>
-<wire x1="53.2638" y1="56.6928" x2="53.2638" y2="68.3514" width="0.3048" layer="1"/>
-<wire x1="48.4632" y1="51.8922" x2="53.2638" y2="56.6928" width="0.3048" layer="1"/>
-<wire x1="48.4632" y1="50.9778" x2="48.4632" y2="51.8922" width="0.3048" layer="1"/>
-<wire x1="48.4632" y1="72.2376" x2="48.26" y2="72.39" width="0.3048" layer="1"/>
-<wire x1="48.4632" y1="50.9778" x2="48.26" y2="50.8" width="0.3048" layer="1"/>
+<contactref element="U$18" pad="2"/>
+<wire x1="31.115" y1="52.705" x2="31.115" y2="71.755" width="0" layer="19" extent="1-1"/>
+<wire x1="31.115" y1="33.655" x2="31.115" y2="52.705" width="0" layer="19" extent="1-1"/>
+<wire x1="21.59" y1="14.605" x2="31.115" y2="33.655" width="0" layer="19" extent="1-1"/>
+<wire x1="12.065" y1="14.605" x2="21.59" y2="14.605" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="COL2">
-<contactref element="SV3" pad="2"/>
+<signal name="COL3">
 <contactref element="U$7" pad="2"/>
 <contactref element="U$8" pad="2"/>
 <contactref element="U$9" pad="2"/>
-<wire x1="69.9516" y1="61.4934" x2="69.9516" y2="50.9778" width="0.3048" layer="1"/>
-<wire x1="74.9808" y1="66.5226" x2="69.9516" y2="61.4934" width="0.3048" layer="1"/>
-<wire x1="74.9808" y1="68.1228" x2="74.9808" y2="66.5226" width="0.3048" layer="1"/>
-<wire x1="70.866" y1="72.2376" x2="74.9808" y2="68.1228" width="0.3048" layer="1"/>
-<wire x1="69.9516" y1="72.2376" x2="70.6374" y2="72.2376" width="0.3048" layer="1"/>
-<wire x1="70.6374" y1="72.2376" x2="70.866" y2="72.2376" width="0.3048" layer="1"/>
-<wire x1="69.9516" y1="50.9778" x2="69.85" y2="50.8" width="0.3048" layer="1"/>
-<wire x1="69.9516" y1="72.2376" x2="69.85" y2="72.39" width="0.3048" layer="1"/>
-<wire x1="57.15" y1="107.442" x2="57.15" y2="107.95" width="0.3048" layer="1"/>
-<wire x1="69.723" y1="94.869" x2="57.15" y2="107.442" width="0.3048" layer="1"/>
-<wire x1="69.723" y1="94.1832" x2="69.723" y2="94.869" width="0.3048" layer="1"/>
-<wire x1="69.723" y1="94.1832" x2="69.85" y2="93.98" width="0.3048" layer="1"/>
-<wire x1="70.6374" y1="83.6676" x2="70.6374" y2="72.2376" width="0.3048" layer="1"/>
-<wire x1="74.9808" y1="88.011" x2="70.6374" y2="83.6676" width="0.3048" layer="1"/>
-<wire x1="74.9808" y1="89.8398" x2="74.9808" y2="88.011" width="0.3048" layer="1"/>
-<wire x1="70.866" y1="93.9546" x2="74.9808" y2="89.8398" width="0.3048" layer="1"/>
-<wire x1="69.9516" y1="93.9546" x2="70.866" y2="93.9546" width="0.3048" layer="1"/>
-<wire x1="70.6374" y1="72.2376" x2="69.85" y2="72.39" width="0.3048" layer="1"/>
-<wire x1="69.9516" y1="93.9546" x2="69.85" y2="93.98" width="0.3048" layer="1"/>
-</signal>
-<signal name="COL3">
-<contactref element="SV3" pad="1"/>
-<contactref element="U$10" pad="2"/>
-<contactref element="U$12" pad="2"/>
-<contactref element="U$11" pad="2"/>
-<wire x1="91.44" y1="61.2648" x2="91.44" y2="50.8" width="0.3048" layer="1"/>
-<wire x1="96.4692" y1="66.294" x2="91.44" y2="61.2648" width="0.3048" layer="1"/>
-<wire x1="96.4692" y1="68.3514" x2="96.4692" y2="66.294" width="0.3048" layer="1"/>
-<wire x1="92.583" y1="72.2376" x2="96.4692" y2="68.3514" width="0.3048" layer="1"/>
-<wire x1="91.44" y1="72.2376" x2="92.1258" y2="72.2376" width="0.3048" layer="1"/>
-<wire x1="92.1258" y1="72.2376" x2="92.583" y2="72.2376" width="0.3048" layer="1"/>
-<wire x1="91.44" y1="72.2376" x2="91.44" y2="72.39" width="0.3048" layer="1"/>
-<wire x1="59.8932" y1="109.2708" x2="59.8932" y2="108.1278" width="0.3048" layer="1"/>
-<wire x1="62.865" y1="112.2426" x2="59.8932" y2="109.2708" width="0.3048" layer="1"/>
-<wire x1="72.4662" y1="112.2426" x2="62.865" y2="112.2426" width="0.3048" layer="1"/>
-<wire x1="90.5256" y1="94.1832" x2="72.4662" y2="112.2426" width="0.3048" layer="1"/>
-<wire x1="91.44" y1="94.1832" x2="90.5256" y2="94.1832" width="0.3048" layer="1"/>
-<wire x1="59.8932" y1="108.1278" x2="59.69" y2="107.95" width="0.3048" layer="1"/>
-<wire x1="91.44" y1="94.1832" x2="91.44" y2="93.98" width="0.3048" layer="1"/>
-<wire x1="92.1258" y1="83.6676" x2="92.1258" y2="72.2376" width="0.3048" layer="1"/>
-<wire x1="96.4692" y1="88.011" x2="92.1258" y2="83.6676" width="0.3048" layer="1"/>
-<wire x1="96.4692" y1="89.8398" x2="96.4692" y2="88.011" width="0.3048" layer="1"/>
-<wire x1="92.3544" y1="93.9546" x2="96.4692" y2="89.8398" width="0.3048" layer="1"/>
-<wire x1="91.44" y1="93.9546" x2="92.3544" y2="93.9546" width="0.3048" layer="1"/>
-<wire x1="92.1258" y1="72.2376" x2="91.44" y2="72.39" width="0.3048" layer="1"/>
-<wire x1="91.44" y1="93.9546" x2="91.44" y2="93.98" width="0.3048" layer="1"/>
+<contactref element="U$15" pad="2"/>
+<contactref element="U$19" pad="2"/>
+<wire x1="50.165" y1="52.705" x2="50.165" y2="71.755" width="0" layer="19" extent="1-1"/>
+<wire x1="50.165" y1="33.655" x2="50.165" y2="52.705" width="0" layer="19" extent="1-1"/>
+<wire x1="40.64" y1="14.605" x2="50.165" y2="33.655" width="0" layer="19" extent="1-1"/>
+<wire x1="31.115" y1="14.605" x2="40.64" y2="14.605" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="D5" pad="A"/>
 <contactref element="U$5" pad="1"/>
-<wire x1="44.577" y1="73.3806" x2="44.577" y2="74.295" width="0.3048" layer="16"/>
-<wire x1="42.0624" y1="70.866" x2="44.577" y2="73.3806" width="0.3048" layer="16"/>
-<wire x1="42.0624" y1="69.9516" x2="42.0624" y2="70.866" width="0.3048" layer="16"/>
-<wire x1="44.577" y1="74.295" x2="44.45" y2="74.4" width="0.3048" layer="16"/>
-<wire x1="42.0624" y1="69.9516" x2="41.91" y2="69.85" width="0.3048" layer="16"/>
+<wire x1="24.765" y1="50.165" x2="22.225" y2="50.905" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$6">
 <contactref element="D3" pad="A"/>
 <contactref element="U$4" pad="1"/>
-<wire x1="44.577" y1="94.869" x2="44.577" y2="95.7834" width="0.3048" layer="16"/>
-<wire x1="42.0624" y1="92.3544" x2="44.577" y2="94.869" width="0.3048" layer="16"/>
-<wire x1="42.0624" y1="91.44" x2="42.0624" y2="92.3544" width="0.3048" layer="16"/>
-<wire x1="44.577" y1="95.7834" x2="44.45" y2="95.99" width="0.3048" layer="16"/>
-<wire x1="42.0624" y1="91.44" x2="41.91" y2="91.44" width="0.3048" layer="16"/>
+<wire x1="22.225" y1="63.395" x2="24.765" y2="69.215" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$1">
 <contactref element="D9" pad="A"/>
 <contactref element="U$10" pad="1"/>
-<wire x1="87.5538" y1="73.152" x2="87.5538" y2="74.295" width="0.3048" layer="16"/>
-<wire x1="85.2678" y1="70.866" x2="87.5538" y2="73.152" width="0.3048" layer="16"/>
-<wire x1="85.2678" y1="69.9516" x2="85.2678" y2="70.866" width="0.3048" layer="16"/>
-<wire x1="87.5538" y1="74.295" x2="87.63" y2="74.4" width="0.3048" layer="16"/>
-<wire x1="85.2678" y1="69.9516" x2="85.09" y2="69.85" width="0.3048" layer="16"/>
+<wire x1="62.865" y1="50.165" x2="73.025" y2="50.905" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$3">
 <contactref element="D7" pad="A"/>
 <contactref element="U$12" pad="1"/>
-<wire x1="87.5538" y1="94.6404" x2="87.5538" y2="95.7834" width="0.3048" layer="16"/>
-<wire x1="85.2678" y1="92.3544" x2="87.5538" y2="94.6404" width="0.3048" layer="16"/>
-<wire x1="85.2678" y1="91.44" x2="85.2678" y2="92.3544" width="0.3048" layer="16"/>
-<wire x1="87.5538" y1="95.7834" x2="87.63" y2="95.99" width="0.3048" layer="16"/>
-<wire x1="85.2678" y1="91.44" x2="85.09" y2="91.44" width="0.3048" layer="16"/>
+<wire x1="62.865" y1="69.215" x2="73.025" y2="63.395" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$11">
 <contactref element="D11" pad="A"/>
 <contactref element="U$6" pad="1"/>
-<wire x1="44.3484" y1="51.435" x2="44.3484" y2="52.8066" width="0.3048" layer="16"/>
-<wire x1="42.0624" y1="49.149" x2="44.3484" y2="51.435" width="0.3048" layer="16"/>
-<wire x1="42.0624" y1="48.4632" x2="42.0624" y2="49.149" width="0.3048" layer="16"/>
-<wire x1="44.3484" y1="52.8066" x2="44.45" y2="52.81" width="0.3048" layer="16"/>
-<wire x1="42.0624" y1="48.4632" x2="41.91" y2="48.26" width="0.3048" layer="16"/>
+<wire x1="22.225" y1="25.295" x2="24.765" y2="31.115" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$12">
 <contactref element="D13" pad="A"/>
 <contactref element="U$11" pad="1"/>
-<wire x1="87.5538" y1="51.435" x2="87.5538" y2="52.8066" width="0.3048" layer="16"/>
-<wire x1="85.2678" y1="49.149" x2="87.5538" y2="51.435" width="0.3048" layer="16"/>
-<wire x1="85.2678" y1="48.4632" x2="85.2678" y2="49.149" width="0.3048" layer="16"/>
-<wire x1="87.5538" y1="52.8066" x2="87.63" y2="52.81" width="0.3048" layer="16"/>
-<wire x1="85.2678" y1="48.4632" x2="85.09" y2="48.26" width="0.3048" layer="16"/>
+<wire x1="62.865" y1="31.115" x2="73.025" y2="25.295" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$37">
 <contactref element="U$3" pad="1"/>
 <contactref element="D10" pad="A"/>
-<wire x1="22.86" y1="51.6636" x2="22.86" y2="52.81" width="0.3048" layer="16"/>
-<wire x1="20.3454" y1="49.149" x2="22.86" y2="51.6636" width="0.3048" layer="16"/>
-<wire x1="20.3454" y1="48.4632" x2="20.3454" y2="49.149" width="0.3048" layer="16"/>
-<wire x1="20.3454" y1="48.4632" x2="20.32" y2="48.26" width="0.3048" layer="16"/>
+<wire x1="3.175" y1="25.295" x2="5.715" y2="31.115" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$38">
 <contactref element="U$1" pad="1"/>
 <contactref element="D1" pad="A"/>
-<wire x1="22.86" y1="94.869" x2="22.86" y2="95.99" width="0.3048" layer="16"/>
-<wire x1="20.3454" y1="92.3544" x2="22.86" y2="94.869" width="0.3048" layer="16"/>
-<wire x1="20.3454" y1="91.44" x2="20.3454" y2="92.3544" width="0.3048" layer="16"/>
-<wire x1="20.3454" y1="91.44" x2="20.32" y2="91.44" width="0.3048" layer="16"/>
+<wire x1="3.175" y1="63.395" x2="5.715" y2="69.215" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$39">
 <contactref element="U$2" pad="1"/>
 <contactref element="D4" pad="A"/>
-<wire x1="22.86" y1="73.152" x2="22.86" y2="74.4" width="0.3048" layer="16"/>
-<wire x1="20.3454" y1="70.6374" x2="22.86" y2="73.152" width="0.3048" layer="16"/>
-<wire x1="20.3454" y1="69.9516" x2="20.3454" y2="70.6374" width="0.3048" layer="16"/>
-<wire x1="20.3454" y1="69.9516" x2="20.32" y2="69.85" width="0.3048" layer="16"/>
+<wire x1="3.175" y1="50.905" x2="5.715" y2="50.165" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$33">
 <contactref element="U$7" pad="1"/>
 <contactref element="D6" pad="A"/>
-<wire x1="66.0654" y1="94.869" x2="66.0654" y2="95.7834" width="0.3048" layer="16"/>
-<wire x1="63.5508" y1="92.3544" x2="66.0654" y2="94.869" width="0.3048" layer="16"/>
-<wire x1="63.5508" y1="91.44" x2="63.5508" y2="92.3544" width="0.3048" layer="16"/>
-<wire x1="66.0654" y1="95.7834" x2="66.04" y2="95.99" width="0.3048" layer="16"/>
-<wire x1="63.5508" y1="91.44" x2="63.5" y2="91.44" width="0.3048" layer="16"/>
+<wire x1="43.815" y1="69.215" x2="53.975" y2="63.395" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$35">
 <contactref element="U$8" pad="1"/>
 <contactref element="D8" pad="A"/>
-<wire x1="66.0654" y1="73.152" x2="66.0654" y2="74.295" width="0.3048" layer="16"/>
-<wire x1="63.5508" y1="70.6374" x2="66.0654" y2="73.152" width="0.3048" layer="16"/>
-<wire x1="63.5508" y1="69.9516" x2="63.5508" y2="70.6374" width="0.3048" layer="16"/>
-<wire x1="66.0654" y1="74.295" x2="66.04" y2="74.4" width="0.3048" layer="16"/>
-<wire x1="63.5508" y1="69.9516" x2="63.5" y2="69.85" width="0.3048" layer="16"/>
+<wire x1="43.815" y1="50.165" x2="53.975" y2="50.905" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$36">
 <contactref element="U$9" pad="1"/>
 <contactref element="D12" pad="A"/>
-<wire x1="66.0654" y1="51.6636" x2="66.0654" y2="52.8066" width="0.3048" layer="16"/>
-<wire x1="63.5508" y1="49.149" x2="66.0654" y2="51.6636" width="0.3048" layer="16"/>
-<wire x1="63.5508" y1="48.4632" x2="63.5508" y2="49.149" width="0.3048" layer="16"/>
-<wire x1="66.0654" y1="52.8066" x2="66.04" y2="52.81" width="0.3048" layer="16"/>
-<wire x1="63.5508" y1="48.4632" x2="63.5" y2="48.26" width="0.3048" layer="16"/>
-</signal>
-<signal name="N$4">
-<contactref element="U$13" pad="1"/>
-<contactref element="D2" pad="A"/>
-<wire x1="146.0754" y1="28.8036" x2="146.0754" y2="29.9466" width="0.3048" layer="16"/>
-<wire x1="143.5608" y1="26.289" x2="146.0754" y2="28.8036" width="0.3048" layer="16"/>
-<wire x1="143.5608" y1="25.6032" x2="143.5608" y2="26.289" width="0.3048" layer="16"/>
-<wire x1="146.0754" y1="29.9466" x2="146.05" y2="29.95" width="0.3048" layer="16"/>
-<wire x1="143.5608" y1="25.6032" x2="143.51" y2="25.4" width="0.3048" layer="16"/>
-</signal>
-<signal name="N$5">
-<contactref element="U$14" pad="1"/>
-<contactref element="D14" pad="A"/>
-<wire x1="63.5508" y1="28.8036" x2="63.5508" y2="29.9466" width="0.3048" layer="16"/>
-<wire x1="61.0362" y1="26.289" x2="63.5508" y2="28.8036" width="0.3048" layer="16"/>
-<wire x1="61.0362" y1="25.6032" x2="61.0362" y2="26.289" width="0.3048" layer="16"/>
-<wire x1="63.5508" y1="29.9466" x2="63.5" y2="29.95" width="0.3048" layer="16"/>
-<wire x1="61.0362" y1="25.6032" x2="60.96" y2="25.4" width="0.3048" layer="16"/>
+<wire x1="43.815" y1="31.115" x2="53.975" y2="25.295" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="ROW3">
-<contactref element="D2" pad="C"/>
-<contactref element="D14" pad="C"/>
-<contactref element="R4" pad="2"/>
-<contactref element="SV1" pad="1"/>
-<wire x1="99.2124" y1="33.6042" x2="63.5508" y2="33.6042" width="0.3048" layer="16"/>
-<wire x1="99.441" y1="33.8328" x2="99.2124" y2="33.6042" width="0.3048" layer="16"/>
-<wire x1="100.1268" y1="33.8328" x2="99.441" y2="33.8328" width="0.3048" layer="16"/>
-<wire x1="63.5508" y1="33.6042" x2="63.5" y2="33.55" width="0.3048" layer="16"/>
-<wire x1="100.1268" y1="33.8328" x2="100.33" y2="33.87" width="0.3048" layer="16"/>
-<wire x1="146.0754" y1="67.2084" x2="146.0754" y2="34.7472" width="0.3048" layer="16"/>
-<wire x1="146.0754" y1="34.7472" x2="146.0754" y2="33.6042" width="0.3048" layer="16"/>
-<wire x1="146.0754" y1="33.6042" x2="146.05" y2="33.55" width="0.3048" layer="16"/>
-<wire x1="146.0754" y1="67.2084" x2="146.05" y2="67.31" width="0.3048" layer="16"/>
-<wire x1="144.4752" y1="33.8328" x2="100.3554" y2="33.8328" width="0.3048" layer="16"/>
-<wire x1="145.3896" y1="34.7472" x2="144.4752" y2="33.8328" width="0.3048" layer="16"/>
-<wire x1="146.0754" y1="34.7472" x2="145.3896" y2="34.7472" width="0.3048" layer="16"/>
-<wire x1="100.3554" y1="33.8328" x2="100.33" y2="33.87" width="0.3048" layer="16"/>
+<contactref element="D16" pad="C"/>
+<contactref element="D19" pad="C"/>
+<contactref element="D17" pad="C"/>
+<contactref element="D18" pad="C"/>
+<wire x1="53.975" y1="2.645" x2="73.025" y2="2.645" width="0" layer="19" extent="16-16"/>
+<wire x1="22.225" y1="2.645" x2="53.975" y2="2.645" width="0" layer="19" extent="16-16"/>
+<wire x1="3.175" y1="2.645" x2="22.225" y2="2.645" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="VCC">
+<contactref element="C1" pad="1"/>
+<contactref element="C2" pad="1"/>
+<contactref element="C3" pad="1"/>
+<contactref element="C4" pad="1"/>
+<contactref element="C5" pad="1"/>
+<contactref element="R5" pad="2"/>
+<contactref element="U1" pad="34"/>
+<contactref element="U1" pad="14"/>
+<contactref element="U1" pad="24"/>
+<contactref element="U1" pad="44"/>
+<contactref element="U1" pad="7"/>
+<wire x1="45.685" y1="41.135" x2="57.15" y2="42.865" width="0" layer="19" extent="16-16"/>
+<wire x1="40.805" y1="44.415" x2="45.685" y2="41.135" width="0" layer="19" extent="16-16"/>
+<wire x1="34.325" y1="42.735" x2="40.805" y2="44.415" width="0" layer="19" extent="16-16"/>
+<wire x1="34.325" y1="34.735" x2="34.325" y2="42.735" width="0" layer="19" extent="16-16"/>
+<wire x1="29.21" y1="36.515" x2="34.325" y2="34.735" width="0" layer="19" extent="16-16"/>
+<wire x1="26.035" y1="36.515" x2="29.21" y2="36.515" width="0" layer="19" extent="16-16"/>
+<wire x1="22.86" y1="36.515" x2="26.035" y2="36.515" width="0" layer="19" extent="16-16"/>
+<wire x1="19.685" y1="36.515" x2="22.86" y2="36.515" width="0" layer="19" extent="16-16"/>
+<wire x1="16.51" y1="36.515" x2="19.685" y2="36.515" width="0" layer="19" extent="16-16"/>
+<wire x1="43.205" y1="33.055" x2="45.685" y2="41.135" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$7">
+<contactref element="U1" pad="17"/>
+<contactref element="X1" pad="3"/>
+<contactref element="C8" pad="2"/>
+<wire x1="50.635" y1="37.635" x2="56.2" y2="36.83" width="0" layer="19" extent="16-16"/>
+<wire x1="45.685" y1="38.735" x2="50.635" y2="37.635" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$8">
+<contactref element="U1" pad="16"/>
+<contactref element="X1" pad="1"/>
+<contactref element="C7" pad="2"/>
+<wire x1="52.235" y1="39.835" x2="58.1" y2="40.005" width="0" layer="19" extent="16-16"/>
+<wire x1="45.685" y1="39.535" x2="52.235" y2="39.835" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$9">
+<contactref element="U1" pad="13"/>
+<contactref element="SW1" pad="2"/>
+<contactref element="SW1" pad="1"/>
+<contactref element="R5" pad="1"/>
+<wire x1="57.15" y1="44.765" x2="61.6" y2="41.25" width="0" layer="19" extent="16-16"/>
+<wire x1="61.6" y1="34.95" x2="61.6" y2="41.25" width="0" layer="19" extent="16-16"/>
+<wire x1="45.685" y1="41.935" x2="57.15" y2="44.765" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$10">
+<contactref element="U1" pad="33"/>
+<contactref element="R6" pad="2"/>
+<wire x1="37.15" y1="29.21" x2="36.005" y2="33.055" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$13">
+<contactref element="U1" pad="2"/>
+<contactref element="J1" pad="1"/>
+<wire x1="36.805" y1="44.415" x2="36.5" y2="70.1" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$14">
+<contactref element="U1" pad="3"/>
+<contactref element="R7" pad="2"/>
+<wire x1="37.605" y1="44.415" x2="36.195" y2="61.28" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$15">
+<contactref element="J1" pad="2"/>
+<contactref element="R7" pad="1"/>
+<wire x1="36.195" y1="63.18" x2="37.3" y2="70.1" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$16">
+<contactref element="U1" pad="4"/>
+<contactref element="R8" pad="2"/>
+<wire x1="38.405" y1="44.415" x2="40.005" y2="61.28" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$17">
+<contactref element="R8" pad="1"/>
+<contactref element="J1" pad="3"/>
+<wire x1="40.005" y1="63.18" x2="38.1" y2="70.1" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="UCAP">
+<contactref element="U1" pad="6"/>
+<contactref element="C6" pad="2"/>
+<wire x1="40.005" y1="44.415" x2="39.37" y2="54.295" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$18">
+<contactref element="D17" pad="A"/>
+<contactref element="U$18" pad="1"/>
+<contactref element="U$14" pad="1"/>
+<wire x1="5.715" y1="12.065" x2="15.24" y2="12.065" width="0" layer="19" extent="1-1"/>
+<wire x1="3.175" y1="6.245" x2="5.715" y2="12.065" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$19">
+<contactref element="D19" pad="A"/>
+<contactref element="U$16" pad="1"/>
+<wire x1="62.865" y1="12.065" x2="73.025" y2="6.245" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$20">
+<contactref element="U$17" pad="1"/>
+<contactref element="D16" pad="A"/>
+<contactref element="U$13" pad="1"/>
+<wire x1="43.815" y1="12.065" x2="53.34" y2="12.065" width="0" layer="19" extent="1-1"/>
+<wire x1="22.225" y1="6.245" x2="43.815" y2="12.065" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$21">
+<contactref element="U$19" pad="1"/>
+<contactref element="D18" pad="A"/>
+<contactref element="U$15" pad="1"/>
+<wire x1="34.29" y1="12.065" x2="53.975" y2="6.245" width="0" layer="19" extent="16-16"/>
+<wire x1="24.765" y1="12.065" x2="34.29" y2="12.065" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$22">
+<contactref element="U$10" pad="2"/>
+<contactref element="U$12" pad="2"/>
+<contactref element="U$11" pad="2"/>
+<contactref element="U$16" pad="2"/>
+<wire x1="69.215" y1="52.705" x2="69.215" y2="71.755" width="0" layer="19" extent="1-1"/>
+<wire x1="69.215" y1="33.655" x2="69.215" y2="52.705" width="0" layer="19" extent="1-1"/>
+<wire x1="69.215" y1="14.605" x2="69.215" y2="33.655" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
