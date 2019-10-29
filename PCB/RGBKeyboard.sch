@@ -7744,19 +7744,15 @@ Source: AVX .. aphvc.pdf</description>
 <library name="CHERRY_MX">
 <packages>
 <package name="CHERRY_MX">
-<hole x="0" y="0" drill="4.1"/>
-<pad name="1" x="-3.81" y="2.54" drill="1.6" shape="square"/>
-<hole x="-5.08" y="0" drill="1.8"/>
-<hole x="5.08" y="0" drill="1.8"/>
-<pad name="2" x="2.54" y="5.08" drill="1.6" shape="square"/>
-<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.127" layer="21"/>
-<wire x1="9.525" y1="9.525" x2="9.525" y2="-9.525" width="0.127" layer="21"/>
-<wire x1="9.525" y1="-9.525" x2="-9.525" y2="-9.525" width="0.127" layer="21"/>
-<wire x1="-9.525" y1="-9.525" x2="-9.525" y2="9.525" width="0.127" layer="21"/>
-<wire x1="-9.525" y1="9.525" x2="9.525" y2="9.525" width="0.127" layer="21"/>
+<hole x="0" y="0" drill="3.9878"/>
+<pad name="1" x="-3.81" y="2.54" drill="1.4986" shape="square"/>
+<hole x="-5.08" y="0" drill="1.7018"/>
+<hole x="5.08" y="0" drill="1.7018"/>
+<pad name="2" x="2.54" y="5.08" drill="1.4986" shape="square"/>
+<wire x1="9.5" y1="9.5" x2="9.5" y2="-9.5" width="0.127" layer="21"/>
+<wire x1="9.5" y1="-9.5" x2="-9.5" y2="-9.5" width="0.127" layer="21"/>
+<wire x1="-9.5" y1="-9.5" x2="-9.5" y2="9.5" width="0.127" layer="21"/>
+<wire x1="-9.5" y1="9.5" x2="9.5" y2="9.5" width="0.127" layer="21"/>
 </package>
 <package name="CHERRY_MX_1_2">
 <hole x="0" y="0" drill="4"/>
@@ -7764,18 +7760,14 @@ Source: AVX .. aphvc.pdf</description>
 <hole x="-5.08" y="0" drill="1.7"/>
 <hole x="5.08" y="0" drill="1.7"/>
 <pad name="2" x="2.54" y="5.08" drill="1.5" shape="square"/>
-<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.127" layer="21"/>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.127" layer="21"/>
-<hole x="-11.938" y="6.985" drill="3.05"/>
-<hole x="11.938" y="6.985" drill="3.05"/>
-<hole x="-11.938" y="-8.255" drill="4"/>
-<hole x="11.938" y="-8.255" drill="4"/>
-<wire x1="19.05" y1="9.525" x2="-19.05" y2="9.525" width="0.127" layer="21"/>
-<wire x1="-19.05" y1="-9.525" x2="19.05" y2="-9.525" width="0.127" layer="21"/>
-<wire x1="-19.05" y1="9.525" x2="-19.05" y2="-9.525" width="0.127" layer="21"/>
-<wire x1="19.05" y1="9.525" x2="19.05" y2="-9.525" width="0.127" layer="21"/>
+<hole x="-11.938" y="6.985" drill="3"/>
+<hole x="11.938" y="6.985" drill="3"/>
+<hole x="-11.938" y="-8.255" drill="3.95"/>
+<hole x="11.938" y="-8.255" drill="3.95"/>
+<wire x1="19" y1="9.5" x2="-19" y2="9.5" width="0.127" layer="21"/>
+<wire x1="-19" y1="-9.5" x2="19" y2="-9.5" width="0.127" layer="21"/>
+<wire x1="-19" y1="9.5" x2="-19" y2="-9.5" width="0.127" layer="21"/>
+<wire x1="19" y1="9.5" x2="19" y2="-9.5" width="0.127" layer="21"/>
 </package>
 <package name="CHERRY_MX_1_6">
 <hole x="0" y="0" drill="4"/>
@@ -7783,18 +7775,14 @@ Source: AVX .. aphvc.pdf</description>
 <hole x="-5.08" y="0" drill="1.7"/>
 <hole x="5.08" y="0" drill="1.7"/>
 <pad name="2" x="2.54" y="5.08" drill="1.5" shape="square"/>
-<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.127" layer="21"/>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.127" layer="21"/>
 <hole x="-50.0126" y="6.985" drill="3.05"/>
 <hole x="50.0126" y="6.985" drill="3.05"/>
-<hole x="-50.0126" y="-8.255" drill="4"/>
-<hole x="50.0126" y="-8.255" drill="4"/>
-<wire x1="59.69" y1="-10.16" x2="-59.69" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="-59.69" y1="10.16" x2="59.69" y2="10.16" width="0.127" layer="21"/>
-<wire x1="-59.69" y1="10.16" x2="-59.69" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="59.69" y1="10.16" x2="59.69" y2="-10.16" width="0.127" layer="21"/>
+<hole x="-50.0126" y="-8.255" drill="3.95"/>
+<hole x="50.0126" y="-8.255" drill="3.95"/>
+<wire x1="57" y1="-9.5" x2="-57" y2="-9.5" width="0.127" layer="21"/>
+<wire x1="-57" y1="9.5" x2="57" y2="9.5" width="0.127" layer="21"/>
+<wire x1="-57" y1="9.5" x2="-57" y2="-9.5" width="0.127" layer="21"/>
+<wire x1="57" y1="9.5" x2="57" y2="-9.5" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
