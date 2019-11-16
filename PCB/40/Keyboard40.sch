@@ -7784,6 +7784,28 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-57" y1="9.5" x2="-57" y2="-9.5" width="0.127" layer="21"/>
 <wire x1="57" y1="9.5" x2="57" y2="-9.5" width="0.127" layer="21"/>
 </package>
+<package name="CHERRY_MX_PLATE">
+<hole x="0" y="0" drill="3.9878"/>
+<pad name="1" x="-3.81" y="2.54" drill="1.4986" shape="square"/>
+<pad name="2" x="2.54" y="5.08" drill="1.4986" shape="square"/>
+<wire x1="9.5" y1="9.5" x2="9.5" y2="-9.5" width="0.127" layer="51"/>
+<wire x1="9.5" y1="-9.5" x2="-9.5" y2="-9.5" width="0.127" layer="51"/>
+<wire x1="-9.5" y1="-9.5" x2="-9.5" y2="9.5" width="0.127" layer="51"/>
+<wire x1="-9.5" y1="9.5" x2="9.5" y2="9.5" width="0.127" layer="51"/>
+</package>
+<package name="CHERRY_MX_1_2_PLATE">
+<hole x="0" y="0" drill="4"/>
+<pad name="1" x="-3.81" y="2.54" drill="1.5" shape="square"/>
+<pad name="2" x="2.54" y="5.08" drill="1.5" shape="square"/>
+<hole x="-11.938" y="6.985" drill="3"/>
+<hole x="11.938" y="6.985" drill="3"/>
+<hole x="-11.938" y="-8.255" drill="3.95"/>
+<hole x="11.938" y="-8.255" drill="3.95"/>
+<wire x1="19" y1="9.5" x2="-19" y2="9.5" width="0.127" layer="51"/>
+<wire x1="-19" y1="-9.5" x2="19" y2="-9.5" width="0.127" layer="51"/>
+<wire x1="-19" y1="9.5" x2="-19" y2="-9.5" width="0.127" layer="51"/>
+<wire x1="19" y1="9.5" x2="19" y2="-9.5" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CHERRY_MX">
@@ -7819,6 +7841,24 @@ Source: AVX .. aphvc.pdf</description>
 </technologies>
 </device>
 <device name="CHERRY_MX_1_6" package="CHERRY_MX_1_6">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CHERRY_MX_PLATE" package="CHERRY_MX_PLATE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CHERRY_MX_1_2_PLATE" package="CHERRY_MX_1_2_PLATE">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -8412,18 +8452,18 @@ Source: AVX .. aphvc.pdf</description>
 <part name="D11" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
 <part name="D12" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
 <part name="D13" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
-<part name="U$10" library="CHERRY_MX" deviceset="CHERRY_MX" device="" value="CHERRY_MX"/>
-<part name="U$11" library="CHERRY_MX" deviceset="CHERRY_MX" device="" value="CHERRY_MX"/>
-<part name="U$1" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$2" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$3" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$4" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$5" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$6" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$7" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$8" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$9" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$12" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
+<part name="U$10" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$11" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$1" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$2" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$3" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$4" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$5" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$6" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$7" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$8" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$9" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$12" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
 <part name="U1" library="ATMEGA32U4-AUR" deviceset="ATMEGA32U4-AUR" device=""/>
 <part name="J1" library="UX60SC-MB-5S8" deviceset="UX60SC-MB-5S8" device=""/>
 <part name="X1" library="FA-238" deviceset="FA-238" device=""/>
@@ -8448,10 +8488,10 @@ Source: AVX .. aphvc.pdf</description>
 <part name="D17" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
 <part name="D18" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
 <part name="D19" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
-<part name="U$16" library="CHERRY_MX" deviceset="CHERRY_MX" device="" value="CHERRY_MX"/>
-<part name="U$17" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$18" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$19" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
+<part name="U$16" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$17" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$18" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$19" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -8473,26 +8513,26 @@ Source: AVX .. aphvc.pdf</description>
 <part name="D26" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
 <part name="D27" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
 <part name="D28" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
-<part name="U$20" library="CHERRY_MX" deviceset="CHERRY_MX" device="" value="CHERRY_MX"/>
-<part name="U$21" library="CHERRY_MX" deviceset="CHERRY_MX" device="" value="CHERRY_MX"/>
-<part name="U$22" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$23" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$24" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$25" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$26" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$27" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$28" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$29" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$30" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$31" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
+<part name="U$20" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$21" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$22" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$23" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$24" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$25" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$26" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$27" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$28" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$29" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$30" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$31" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
 <part name="D29" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
 <part name="D30" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
 <part name="D31" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
 <part name="D32" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
-<part name="U$35" library="CHERRY_MX" deviceset="CHERRY_MX" device="" value="CHERRY_MX"/>
-<part name="U$36" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$37" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$38" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
+<part name="U$35" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$36" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$37" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$38" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
 <part name="D33" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
 <part name="D34" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
 <part name="D35" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
@@ -8505,29 +8545,29 @@ Source: AVX .. aphvc.pdf</description>
 <part name="D42" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
 <part name="D43" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
 <part name="D44" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
-<part name="U$32" library="CHERRY_MX" deviceset="CHERRY_MX" device="" value="CHERRY_MX"/>
-<part name="U$33" library="CHERRY_MX" deviceset="CHERRY_MX" device="" value="CHERRY_MX"/>
-<part name="U$34" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$39" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$40" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$41" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$42" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$43" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$44" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$45" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$46" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$47" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
+<part name="U$32" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$33" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$34" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$39" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$40" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$41" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$42" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$43" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$44" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$45" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$46" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$47" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
 <part name="D45" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
 <part name="D46" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
 <part name="D47" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
 <part name="D48" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
-<part name="U$48" library="CHERRY_MX" deviceset="CHERRY_MX" device="" value="CHERRY_MX"/>
-<part name="U$49" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$50" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$51" library="CHERRY_MX" deviceset="CHERRY_MX" device=""/>
-<part name="U$13" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_1_2"/>
-<part name="U$14" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_1_2"/>
-<part name="U$15" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_1_2"/>
+<part name="U$48" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$49" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$50" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$51" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_PLATE" value="CHERRY_MXCHERRY_MX_PLATE"/>
+<part name="U$13" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_1_2_PLATE" value="CHERRY_MXCHERRY_MX_1_2_PLATE"/>
+<part name="U$14" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_1_2_PLATE" value="CHERRY_MXCHERRY_MX_1_2_PLATE"/>
+<part name="U$15" library="CHERRY_MX" deviceset="CHERRY_MX" device="CHERRY_MX_1_2_PLATE" value="CHERRY_MXCHERRY_MX_1_2_PLATE"/>
 <part name="D49" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
 <part name="D50" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
 <part name="D51" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
