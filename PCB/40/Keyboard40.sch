@@ -8571,6 +8571,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="D49" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
 <part name="D50" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
 <part name="D51" library="BAV21W-7-F" deviceset="BAV21W-7-F" device=""/>
+<part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8679,6 +8680,9 @@ Source: AVX .. aphvc.pdf</description>
 </instance>
 <instance part="P+5" gate="VCC" x="271.78" y="106.68" smashed="yes" rot="R270">
 <attribute name="VALUE" x="269.24" y="109.22" size="1.778" layer="96"/>
+</instance>
+<instance part="P+6" gate="VCC" x="299.72" y="116.84" smashed="yes">
+<attribute name="VALUE" x="297.18" y="114.3" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -8835,6 +8839,15 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="264.16" y1="106.68" x2="269.24" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="UVCC"/>
+<wire x1="264.16" y1="111.76" x2="299.72" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="VBUS"/>
+<wire x1="299.72" y1="111.76" x2="320.04" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="111.76" x2="299.72" y2="114.3" width="0.1524" layer="91"/>
+<junction x="299.72" y="111.76"/>
+<pinref part="P+6" gate="VCC" pin="VCC"/>
+</segment>
 </net>
 <net name="N$9" class="0">
 <segment>
@@ -8861,13 +8874,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="U1" gate="G$1" pin="PE2(!HWB!)"/>
 <wire x1="264.16" y1="71.12" x2="269.24" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="UVCC"/>
-<wire x1="264.16" y1="111.76" x2="320.04" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="VBUS"/>
 </segment>
 </net>
 <net name="N$14" class="0">
